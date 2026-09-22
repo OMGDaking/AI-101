@@ -1,0 +1,3 @@
+# Style note — neon monoliths
+
+Turn the wet, crowded cyberpunk photographs into a spare poster, not an illustrated cityscape. Use a single fully clothed adult fashion figure, a few enormous rectangular buildings, and one open magenta sky field. The figure should be isolated on the left, with a long dark-wine coat that reads as one quiet silhouette. Apply the ribbed-glass reference only to the face and hair: vertical bands should make the portrait feel observed through an architectural partition. Use a few broad reflection shapes at the bottom; do not add signage, symbols, texture noise, or text.

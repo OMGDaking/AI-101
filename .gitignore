@@ -1,0 +1,17 @@
+# Local Obsidian and assistant data
+.obsidian/
+.claudian/
+.trash/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Credentials and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
