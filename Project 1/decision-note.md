@@ -8,9 +8,4 @@ The largest change between the first and final outputs is the composition. The b
 
 ## Class-review observation
 
-**Lineup note — fill from the actual peer artifact and their kit/log:**
-
-- **Visible similarity:** My final poster and `[Iban Final Poster]` both use `[Color]`.
-- **Visible difference:** My final uses `[Alot of background and concept art]`, while `[Iban Poster]` uses `[Comic art/paper art]`.
-- **Question:** `[Question about a visible choice that the peer’s kit or log might answer- Iban said he wanted to show anger]`
-- **Traced comparison:** We had some of the same idea for starting out with the log but Iban didn't listen that well. Instead mine did change slowly but listened very well. My logs were more in changing background and make sure the fashion icon looks cool. With Iban his turned worse and worse from each prompt.
+I compared my final with Iban’s comic-and-paper-art poster. Both pieces use a restricted, graphic approach rather than a naturalistic image, but the visible results are different: mine uses a neon city background and a controlled fashion silhouette, while Iban’s uses a rougher comic/paper treatment. Iban said that he wanted his image to communicate anger; that intention helps explain the sharper, more aggressive surface of his poster. My kit and directions instead prioritized a solitary, watchful figure and progressively reduced the crowded background. The comparison shows how different intent notes and direction choices can produce visibly different work even when both projects begin with an AI-generated image.

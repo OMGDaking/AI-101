@@ -1,1 +1,1 @@
-OpenAI image generation produced the four image drafts, while the project author supplied the reference kit, set and revised the directions, assessed each output, and selected the final artifact.
+OpenAI image generation produced the four drafts, while I built the context kit, chose the three-color neon-city direction, revised each prompt, assessed every output, and selected the final artifact.
