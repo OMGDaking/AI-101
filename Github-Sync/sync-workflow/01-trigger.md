@@ -4,8 +4,10 @@
 
 **What this step does:** starts the workflow on a schedule, without me clicking anything.
 
-**My setting:** every Monday and Wednesday at 9 p.m if missed schedule update when computer is on.
+**My setting:** every Monday and Wednesday at 9 p.m. local time, using the Mac's loaded `launchd` job.
 
-**Good looks like:** the workflow starts at the same time every day.
+**If the Mac is asleep:** a missed scheduled run starts after it wakes. **If the Mac is powered off:** that run is skipped; I can run a manual sync after startup or wait until the next scheduled time.
 
-**How I check it:** I look at the time stamp on the latest update in GitHub.
+**Good looks like:** the job runs on Monday and Wednesday at 9 p.m. when the Mac is on, or after wake if it was asleep.
+
+**How I check it:** I review `~/Library/Logs/AI-101-sync/sync.log` for a successful run. If files changed, I also check the latest commit time on GitHub. A run with no file changes will not create a new commit.
