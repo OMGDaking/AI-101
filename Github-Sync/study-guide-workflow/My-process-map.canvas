@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"7f0f780e12be05f1","type":"text","text":"2. Highlight and organize (model)\n\nSuggest highlights and concise notes in source order. label each one and give its section location.Mark unknowns.\n\noutput: unreviewed guide\nCheck: each note traces to the sources","x":300,"y":-55,"width":385,"height":275},
+		{"id":"48ef2b2f29c2d673","type":"text","text":"## 3 · Keep, change, cut (human)\nCompare suggested highlights and notes with the original. Decide what helps, fix what is unclear, and remove what does not belong.\n\n**Output:** reviewed guide  \n**Check:** my decisions and reasons are recorded.\n\n[[Github-Sync/study-guide-workflow/03-human-check.md|Open step file]]","x":740,"y":-60,"width":400,"height":280},
+		{"id":"4b31e40445ff254d","type":"text","text":"if recall fails, improve the notes and review again","x":560,"y":400,"width":250,"height":60},
+		{"id":"a33e6ba421b8e4e4","type":"text","text":"1.Human will skim\nRead the original document once. Note any questions.\ninput: original brief\nCheck: I looked at the source myself\n[[01-Read First]]","x":-120,"y":-18,"width":320,"height":201},
+		{"id":"00bea11df34c6f8d","type":"text","text":"## 4 · Test and revise (human)\nClose the guide. Explain the assignment and answer self-test questions from memory. Check against the original; revise weak notes.\n\n**Output:** useful study guide  \n**Check:** I can explain it without copying.\n\n[[Github-Sync/study-guide-workflow/04-test-and-revise.md|Open step file]]","x":1240,"y":-60,"width":400,"height":268}
+	],
+	"edges":[
+		{"id":"22a06c43b523110d","fromNode":"7f0f780e12be05f1","fromSide":"left","toNode":"a33e6ba421b8e4e4","toSide":"right"},
+		{"id":"a0411c956d280f1e","fromNode":"48ef2b2f29c2d673","fromSide":"left","toNode":"7f0f780e12be05f1","toSide":"right"},
+		{"id":"4be0a6e4dfb12ae8","fromNode":"00bea11df34c6f8d","fromSide":"left","toNode":"48ef2b2f29c2d673","toSide":"right"},
+		{"id":"590a62377a39eda1","fromNode":"00bea11df34c6f8d","fromSide":"bottom","toNode":"4b31e40445ff254d","toSide":"right"},
+		{"id":"3e48b7d2b74b4e9f","fromNode":"a33e6ba421b8e4e4","fromSide":"bottom","toNode":"4b31e40445ff254d","toSide":"left"}
+	]
+}
