@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["suggestions", "unknowns", "self_test"],
+  "properties": {
+    "suggestions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "source_location", "highlight", "note"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["requirement", "deadline", "term", "example", "question", "key idea", "process", "tool"]
+          },
+          "source_location": {"type": "string"},
+          "highlight": {"type": "string"},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "self_test": {"type": "array", "items": {"type": "string"}}
+  }
+}

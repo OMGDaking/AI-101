@@ -78,3 +78,17 @@ The four Project 1 outputs below were generated on September 17, 2026 with OpenA
 - **Instruction:** Investigate a dedicated inbox trigger and available local automation tools.
 - **AI output:** A proposed design: watch a dedicated inbox, draft a guide for each new document, then stop for my keep/change/cut review. No background job was installed or enabled.
 - **Decision:** **Pending.** The watched folder, file types, and permission for unattended sending of those documents to the AI provider still need my confirmation before implementation or testing.
+
+## September 26, 2026 — Enable and test the automatic draft trigger
+
+- **Context and authorization:** I confirmed a dedicated Markdown inbox and automatic sending to the current AI provider. This is an opt-in folder, not a scan of the whole vault.
+- **Instruction:** Make a new document in [[Github-Sync/study-guide-workflow/inbox/]] start the model-assist stage by itself, save an unreviewed guide in [[Github-Sync/study-guide-workflow/drafts/]], and stop before my keep/change/cut review.
+- **AI output:** [[Github-Sync/study-guide-workflow/automation/README.md]] documents the enabled background job. A harmless built-in model self-test passed. A new [[Github-Sync/study-guide-workflow/inbox/automation-demo.md]] triggered a source-ordered [[Github-Sync/study-guide-workflow/drafts/automation-demo-e6faab29fc2e-study-guide.md]]; the next scan made no duplicate. The source stayed unchanged and the draft left my decisions blank.
+- **Intent gap and revision:** The first demo draft repeated “Model suggestion — unreviewed” and blank interpretation placeholders inside individual notes, even though the template already labels the whole draft and leaves review space. I revised the automation prompt to ask for content-only notes. This wording revision has not yet been tested on a second new document.
+- **Decision:** **Keep the trigger; review the draft myself.** The automatic step is working, but the demo output remains an AI suggestion, not a finished or personally reviewed study guide. The complete Project 2 brief is still not confirmed, and this does not replace the required AI-free process map, peer feedback, or a human revision.
+
+## September 26, 2026 — Fresh-document trigger test
+
+- **Test input:** I asked the AI to test the enabled workflow. It created a new, clearly labeled sample in [[Github-Sync/study-guide-workflow/inbox/live-trigger-test-2026-09-26.md]]. This was test material, not an instructor document.
+- **Observed result:** The background job detected the file without a manual run, then produced [[Github-Sync/study-guide-workflow/drafts/live-trigger-test-2026-09-26-03726b09161a-study-guide.md]]. Its four quoted highlights appear in source order; notes no longer repeat the template's “model suggestion” wording. The source checksum matches the draft record, the human decision fields remain blank, and a repeat scan made no duplicate.
+- **Decision:** **Keep the prompt revision and automatic trigger.** The technical test passed. I still need to try a real document and review its AI suggestions against the source before calling that guide complete.

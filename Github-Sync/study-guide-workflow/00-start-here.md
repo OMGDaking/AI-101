@@ -6,6 +6,8 @@
 
 **Canvas map:** ![[My-process-map.canvas]]
 
+**Optional automatic start:** Put a UTF-8 Markdown document you are willing to send to the AI provider in [[Github-Sync/study-guide-workflow/inbox/]]. A background job creates an **unreviewed** draft in [[Github-Sync/study-guide-workflow/drafts/]] and stops before step 3. See [[Github-Sync/study-guide-workflow/automation/README.md]] for limits and pause/resume instructions. The manual steps below remain the full workflow.
+
 Follow the four step files in order. The model should suggest highlights, take concise notes, label each suggestion, add a precise source location, and format everything in the same order as the source. I decide which suggestions stay and write my own explanations.
 
 1. [[01-Read First]] — I skim the original document and note questions, if any.
