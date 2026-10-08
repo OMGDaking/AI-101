@@ -25,7 +25,10 @@ STEP_TWO = WORKFLOW / "02-organize.md"
 STATE_DIR = Path.home() / "Library" / "Application Support" / "AI-101-study-guide"
 STATE_FILE = STATE_DIR / "state.json"
 LOCK_FILE = STATE_DIR / "run.lock"
-CODEX = Path("/Applications/ChatGPT.app/Contents/Resources/codex")
+CODEX_CANDIDATES = (
+    Path("/Applications/ChatGPT.app/Contents/Resources/codex-cli/bin/codex"),
+    Path("/Applications/ChatGPT.app/Contents/Resources/codex"),
+)
 MAX_BYTES = 256 * 1024
 MIN_AGE_SECONDS = 15
 RETRY_DELAY_SECONDS = 10 * 60
@@ -36,6 +39,13 @@ KINDS = {"requirement", "deadline", "term", "example", "question", "key idea", "
 
 def log(message):
     print("{} {}".format(datetime.now().astimezone().isoformat(timespec="seconds"), message), flush=True)
+
+
+def codex_path():
+    for candidate in CODEX_CANDIDATES:
+        if candidate.is_file() and os.access(str(candidate), os.X_OK):
+            return candidate
+    raise RuntimeError("The bundled Codex command is unavailable")
 
 
 def atomic_text(path, content):
@@ -119,12 +129,11 @@ def model_prompt(name, source):
 
 
 def call_model(name, source):
-    if not CODEX.is_file():
-        raise RuntimeError("The bundled Codex command is unavailable")
+    codex = codex_path()
     with tempfile.TemporaryDirectory(prefix="ai101-guide-", dir=str(STATE_DIR)) as temp_dir:
         output = Path(temp_dir) / "result.json"
         command = [
-            str(CODEX), "exec", "--ignore-user-config", "--sandbox", "read-only",
+            str(codex), "exec", "--ignore-user-config", "--sandbox", "read-only",
             "--ephemeral", "--skip-git-repo-check", "-C", temp_dir,
             "--output-schema", str(SCHEMA), "--output-last-message", str(output), "-"
         ]
@@ -233,7 +242,9 @@ def main():
     DRAFTS.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     if args.check:
-        assert SCHEMA.is_file() and STEP_TWO.is_file() and CODEX.is_file()
+        if not SCHEMA.is_file() or not STEP_TWO.is_file():
+            raise RuntimeError("A required workflow file is unavailable")
+        codex_path()
         json.loads(SCHEMA.read_text(encoding="utf-8"))
         log("Configuration check passed; Markdown inbox is {}".format(INBOX))
         return 0
