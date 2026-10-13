@@ -2,17 +2,19 @@
 
 ## Play or share with classmates
 
-**[Download the playable game from GitHub](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)** · [Preview](preview-cy7.png)
+**[Download and play — game ZIP](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)** · [Preview image](preview-cy7.png)
 
 ### Playing from Obsidian
 
-Obsidian's note editor does not execute the game. Use [Play on this Mac](http://127.0.0.1:8765/) while the local game server is running. To start it again, paste this command into Terminal and leave that Terminal window open:
+Obsidian's note editor does not execute the game. Use the ZIP download link above, unzip it, then open the HTML file in Chrome or Safari.
+
+For an optional preview on this Mac, paste this command into Terminal and leave that Terminal window open:
 
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1 --directory "/Users/omgdaking/AI-101/Project 2/presentation-game/dist"
 ```
 
-That address works only on the Mac running the server.
+Then enter `http://127.0.0.1:8765/` in the browser. This address works only on the Mac running the server; it is not a class sharing link.
 
 ### Playing a downloaded ZIP
 
@@ -44,7 +46,7 @@ The five stations correspond to the Project 2 study-guide workflow: gather, orga
 - `dist/assets/cy7-recovery-room.png`: generated scene inspired by the user's robot reference
 - `image-generation-prompt.md`: built-in image-generation prompt and provenance
 
-Run `python3 build-shareable.py` after editing the source to rebuild the self-contained file with the current assets.
+Run `python3 build-shareable.py` after editing the source to rebuild both the self-contained HTML and downloadable ZIP with the current assets.
 
 ## Verification
 
