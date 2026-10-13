@@ -2,14 +2,14 @@
 
 ## Project 2: Workflow Quest
 
-**[▶ Download and play Workflow Quest](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Play-Workflow-Quest.html)**
+**[▶ Download and play Workflow Quest](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)**
 
 A playable cyber-robot game about restoring five failed human checkpoints. Choose a checkpoint, inspect the evidence, and decide which repair protects the student's learning.
 
 - [Project 2 workflow and research](Project%202/README.md)
 - [Game instructions and preview](Project%202/presentation-game/README.md)
 
-Download the HTML file using the link above (or the file's **Download raw file** button), then open it in Chrome, Safari, Edge, or Firefox. The game works offline. This repository and its game remain private; viewers need repository access.
+Download the ZIP using the link above, unzip it, then right-click `Play-Workflow-Quest.html` and choose **Open With → Chrome or Safari**. The game works offline. This repository and its game remain private; viewers need repository access.
 
 ## Project 1: Iterate, Then Compare
 

@@ -2,13 +2,13 @@
 
 ## Play the presentation game
 
-**[▶ Download and play Workflow Quest — CY-7 Recovery Lab](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Play-Workflow-Quest.html)**
+**[▶ Download and play Workflow Quest — CY-7 Recovery Lab](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)**
 
 In Obsidian, the game needs a browser. [Play on this Mac while the local server is running](http://127.0.0.1:8765/), or download the HTML above and use Finder → right-click the file → **Open With** → Chrome or Safari. The detailed instructions are in [[presentation-game/README]].
 
 Click a failed checkpoint, inspect the evidence, and choose a repair. Correct decisions restore stations; missed checks stay red. Try to restore all five, then reboot for another round. Play individually or let the class vote.
 
-Download the HTML file using the link above (or GitHub's **Download raw file** button), then open it in a browser. The game runs offline. The AI-101 repository remains private, so viewers need access to download it. There is no hosted game URL.
+Download the ZIP using the link above, unzip it, then right-click `Play-Workflow-Quest.html` and choose **Open With → Chrome or Safari**. The game runs offline. The AI-101 repository remains private, so viewers need access to download it. There is no hosted game URL.
 
 The game illustrates the workflow. Actual Claudian runs, personal checks, and peer feedback are documented separately below.
 

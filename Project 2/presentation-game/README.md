@@ -2,7 +2,7 @@
 
 ## Play or share with classmates
 
-**[Download the playable game from GitHub](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Play-Workflow-Quest.html)** · [Preview](preview-cy7.png)
+**[Download the playable game from GitHub](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)** · [Preview](preview-cy7.png)
 
 ### Playing from Obsidian
 
@@ -14,7 +14,11 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory "/Users/omgdaking/AI-10
 
 That address works only on the Mac running the server.
 
-### Playing a downloaded file
+### Playing a downloaded ZIP
+
+Download `Workflow-Quest.zip`, then double-click it to unzip. Inside, right-click `Play-Workflow-Quest.html` and choose **Open With → Google Chrome** or **Safari**. If GitHub shows a file page instead, use its **Download raw file** button.
+
+### Playing a downloaded HTML file
 
 Find `Play-Workflow-Quest.html` in Finder, right-click it, and choose **Open With → Google Chrome** or **Safari**. Keep the `.html` extension. A file ending in `.md` is an Obsidian note and will not run the game.
 
