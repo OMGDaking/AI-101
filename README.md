@@ -2,7 +2,7 @@
 
 ## Project 2: Workflow Quest
 
-**[▶ Download and play Workflow Quest](Project%202/presentation-game/Play-Workflow-Quest.html?raw=1)**
+**[▶ Download and play Workflow Quest](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Play-Workflow-Quest.html)**
 
 A playable cyber-robot game about restoring five failed human checkpoints. Choose a checkpoint, inspect the evidence, and decide which repair protects the student's learning.
 

@@ -2,7 +2,21 @@
 
 ## Play or share with classmates
 
-**[Download the playable game](Play-Workflow-Quest.html?raw=1)** · [Preview](preview-cy7.png)
+**[Download the playable game from GitHub](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Play-Workflow-Quest.html)** · [Preview](preview-cy7.png)
+
+### Playing from Obsidian
+
+Obsidian's note editor does not execute the game. Use [Play on this Mac](http://127.0.0.1:8765/) while the local game server is running. To start it again, paste this command into Terminal and leave that Terminal window open:
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory "/Users/omgdaking/AI-101/Project 2/presentation-game/dist"
+```
+
+That address works only on the Mac running the server.
+
+### Playing a downloaded file
+
+Find `Play-Workflow-Quest.html` in Finder, right-click it, and choose **Open With → Google Chrome** or **Safari**. Keep the `.html` extension. A file ending in `.md` is an Obsidian note and will not run the game.
 
 Open `Play-Workflow-Quest.html` in Chrome, Safari, Edge, or Firefox. Share this one file with classmates; all game code and artwork are embedded, so it works offline without installing anything. On a computer, download the file and open it in the browser rather than a document preview.
 
