@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Restore five failed human checkpoints with CY-7, your cyber inspection robot."><title>Workflow Quest · CY-7 Recovery Lab</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div><div class="tag">Project 2 / Human checkpoint recovery lab</div><h1>Workflow Quest<span> / CY-7</span></h1><p>A room full of failed checkpoints. You are the operator.</p></div><div class="controls"><button id="motion" class="utility" aria-pressed="false">Pause motion</button><button id="sound" class="utility" aria-pressed="false">Sound: off</button></div></header>
+<div class="room" id="room" data-mood="idle"><div class="room-label">INSPECTION BAY 07 <b> · <span id="bay-status">5 CHECKPOINTS OFFLINE</span></b></div>
+<img class="room-art" src="assets/cy7-recovery-room.png" alt="Blue armored cyber robot with a camera eye and dark scarf inspecting a hologram in a room of failed checkpoints.">
+<div class="room-shade"></div><div class="holo-scan" aria-hidden="true"></div><div class="lens-ring" aria-hidden="true"></div><div class="atmosphere" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="terminal-bank"><div class="terminal-caption">HUMAN CHECKPOINTS <span id="terminal-hint">SELECT AFTER START</span></div><div id="monitors"></div></div>
+<div class="room-corner" aria-hidden="true">CY—7 / LIVE SCAN <span id="scan-state">STANDBY</span></div></div>
+<div class="status-strip"><div class="bot-message"><span class="bot-id">CY-7</span><p id="bot-message" aria-live="polite">Five failed checkpoints detected. Operator, I need your judgment.</p></div><div class="score"><strong id="score">0 / 5</strong>CHECKPOINTS RESTORED</div></div>
+<div class="board">
+<section id="intro" class="intro"><div class="intro-grid"><div><div class="eyebrow">Recovery protocol / awaiting operator</div><h2>The room is broken. Your checks can fix it.</h2><p>Click a failed checkpoint in the room. Inspect the evidence and choose the repair. Correct decisions bring stations online; missed checks stay red. Restore all five.</p></div><button class="primary" id="start">Enter the control room →</button></div><div class="instructions">PLAY SOLO OR LET THE CLASS VOTE · CLICK A TERMINAL · 1 / 2 / 3 TO ANSWER</div></section>
+<section id="hub" hidden><div class="eyebrow">Choose your next inspection</div><h2>Which checkpoint can you restore?</h2><p>Click any red checkpoint in the room above. The robot scans; you decide.</p></section>
+<section id="play" hidden><div class="eyebrow" id="stage-label"></div><h2 id="title"></h2><div class="evidence"><section><h3>01 / ORIGINAL EVIDENCE</h3><p id="source"></p></section><section><h3>02 / PROPOSED ACTION</h3><p id="proposal"></p></section></div><div class="choices" id="choices"></div><div class="feedback" id="feedback" aria-live="polite" hidden><div><h3 id="result"></h3><p id="reason"></p></div><button class="primary" id="next">Return to the room →</button></div></section>
+<section id="finish" class="finish" hidden><div class="eyebrow">Inspection complete</div><h2 id="finish-title"></h2><p id="finish-text"></p><div class="summary" id="summary"></div><p>Presentation handoff: “These checkpoints are why my workflow needs a human. Now I’ll show my actual first run and what I changed.”</p><button class="primary" id="replay">Reboot the room ↻</button></section>
+</div><div class="bottom"><span>FICTIONAL RECOVERY SCENARIOS · YOUR PROJECT RUN STILL NEEDS REAL CHECKS</span><span>CY-7 INSPECTS. THE HUMAN DECIDES.</span></div>
+</main><script src="game.js"></script></body></html>

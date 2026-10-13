@@ -1,0 +1,3 @@
+# Local Sites registration is separate from the GitHub project.
+.openai/
+__pycache__/
