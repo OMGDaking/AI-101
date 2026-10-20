@@ -1,5 +1,7 @@
 # ESF Companion State
 
+> Project platform: use Codex. This imported reference retains examples for other tools; follow the current project start file and Codex setup instructions instead of those installation examples.
+
 This file holds mutable local state for the Claude Code workflow.
 Onboarding and session memory update this file instead of editing `.claude/`.
 

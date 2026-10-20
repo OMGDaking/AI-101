@@ -38,8 +38,8 @@ Mutable local state for Project 2 in Codex. Project workspace root: `/Users/omgd
 ## Project Status
 
 - Intent and research drafts, Canvas, step directions, and two diagnostic Codex demonstrations exist.
-- The demonstrations are not Claudian runs and do not establish human approval, learning, or completed critique.
-- Personal intent review, source verification, actual Claudian execution, human checks, recall practice, and peer critique remain pending based on this chat.
+- The demonstrations are partial Codex tests and do not establish completed workflow runs, human approval, learning, or completed critique.
+- Personal intent review, source verification, a complete Codex workflow execution, human checks, recall practice, and peer critique remain pending based on this chat.
 - Preserve original outputs and AI-use disclosures.
 - Do not retroactively describe AI-generated intent as unaided work.
 - Immediate ESF next action: record one actual user decision about accepting, changing, or rejecting AI's proposed direction. No Record of Resistance or Design Decision has been supplied yet.

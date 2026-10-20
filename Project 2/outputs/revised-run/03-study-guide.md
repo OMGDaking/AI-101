@@ -1,5 +1,7 @@
 # Study guide — revised Codex demonstration
 
+> Historical diagnostic output. Original source/tool wording is retained; current workflow runs use Codex. No additional run or human approval is claimed.
+
 Date: October 13, 2026. Tool: Codex. Human verification pending.
 
 **Source scope:** [[../../inputs/course-brief-excerpts]] contains selected excerpts of Steps 6–11, not the complete Project 2 brief. This checklist covers only that input. Class labels are preserved below; calendar dates are not supplied.

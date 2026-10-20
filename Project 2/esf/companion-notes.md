@@ -1,7 +1,7 @@
 ---
 type: companion-notes
 scope: all
-last-updated: not set
+last-updated: 2026-10-15
 ---
 
 # Companion Notes
@@ -11,6 +11,8 @@ The ESF Companion reads this file at the start of every session and applies acti
 ---
 
 ## Active Corrections
+
+- 2026-10-15: The user uses Codex. Give Codex instructions for Projects 2 and 3; do not direct them to use Claudian. Preserve historical logs and quoted source wording as historical evidence.
 
 Corrections the Companion applies every session. Add anything that the default behavior gets wrong for your context.
 

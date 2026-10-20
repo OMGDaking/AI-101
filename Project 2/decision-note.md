@@ -1,6 +1,6 @@
 # Decision note — AI-assisted proposed revision
 
-This note records Codex's diagnostic work. My review, real peer critique, and the assignment's Claudian runs are still pending.
+This note records Codex's diagnostic work. My review, real peer critique, and complete Codex workflow runs are still pending.
 
 ## The gap I found
 
@@ -25,7 +25,7 @@ Compare `outputs/first-run/03-study-guide.md` with `outputs/revised-run/03-study
 - I must confirm the workflow reflects my real habits and personally verify the research sources.
 - The source is a partial brief; a full-document test is still needed.
 - Neither demonstration has passed my human check or recall practice.
-- I must run in Claudian with checks after each step, obtain real group critique, record my decisions, and revise again if needed.
+- I must run in Codex with checks after each step, obtain real group critique, record my decisions, and revise again if needed.
 
 ## What stayed mine
 

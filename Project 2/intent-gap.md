@@ -1,6 +1,6 @@
 # Intent gap — AI-assisted observation for review
 
-These sentences describe the Codex demonstration, not a completed Claudian run or my independent reflection.
+These sentences describe the Codex demonstration, not a completed workflow run with human approval or my independent reflection.
 
 **I intended…** a guide that preserves the source context, separates concepts from tasks, and leaves explanations and approval to me.
 

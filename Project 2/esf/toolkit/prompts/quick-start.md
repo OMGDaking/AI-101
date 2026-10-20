@@ -1,5 +1,7 @@
 # ESF Companion: Quick Start (Single Paste)
 
+> Project platform: use Codex. This imported reference retains examples for other tools; follow the current project start file and Codex setup instructions instead of those installation examples.
+
 One document. Fill in the top section, then paste the whole thing as your first message in any AI conversation tool (ChatGPT, Claude, Gemini, or similar). No separate files needed.
 
 ---

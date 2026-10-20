@@ -1,5 +1,7 @@
 # Project 2 Study Guide — Provisional Draft
 
+> Platform note (October 15, 2026): cited terms below preserve the original course excerpt. Run your current workflow in Codex.
+
 > **Status:** Unreviewed draft based only on [[Github-Sync/study-guide-workflow/project-2-brief-excerpt.md]]. The complete brief and my human check are still needed. Highlights and notes are model suggestions, not my decisions. Items below are not a final submission checklist.
 
 ## My own understanding

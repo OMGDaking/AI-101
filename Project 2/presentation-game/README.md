@@ -36,7 +36,7 @@ Motion can be paused, and the game respects the system's reduced-motion preferen
 
 ## Project connection
 
-The five stations correspond to the Project 2 study-guide workflow: gather, organize, build, human check, and recall. Game scenarios are illustrative. Playing does not count as a Claudian run, personal source verification, learning assessment, or peer critique. Show the actual workflow and run comparison after the game.
+The five stations correspond to the Project 2 study-guide workflow: gather, organize, build, human check, and recall. Game scenarios are illustrative. Playing does not count as a Codex workflow run, personal source verification, learning assessment, or peer critique. Show the actual workflow and run comparison after the game.
 
 ## Editable version
 

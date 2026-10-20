@@ -1,5 +1,9 @@
 # AI use log
 
+## Codex instructions correction — October 15, 2026
+
+The user clarified that they use Codex, not Claudian, and requested updated directions. Codex updated current Project 2 and Project 3 instructions and recorded the preference. Saved diagnostic runs, original course excerpts, and version snapshots retain their historical wording with explanatory notes. No workflow test or human check was performed by this edit.
+
 ## Private GitHub game addition — October 13, 2026
 
 I asked Codex to add the playable game to my GitHub project. GitHub rejected Pages for the private AI-101 repository under my current plan. I chose “Keep it in my private project only” when asked about a separate public game repository. Codex prepared Download and Play links and the self-contained game for the private repository. There is no public game site; viewers need repository access and must download the HTML file to play in a browser.

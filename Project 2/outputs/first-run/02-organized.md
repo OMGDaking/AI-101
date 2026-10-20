@@ -1,5 +1,7 @@
 # Organized source — first Codex demonstration
 
+> Historical diagnostic output. Original source/tool wording is retained; current workflow runs use Codex. No additional run or human approval is claimed.
+
 Date: October 13, 2026. Input: [[../../inputs/course-brief-excerpts]]. This is a diagnostic model-stage demonstration, not a Claudian run or a record of user-approved transitions.
 
 ## Concepts

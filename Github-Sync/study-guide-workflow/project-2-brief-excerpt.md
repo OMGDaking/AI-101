@@ -1,5 +1,7 @@
 # Project 2 brief — excerpt supplied September 24, 2026
 
+> Platform note (October 15, 2026): this is a preserved course excerpt. The user now runs workflows in Codex; tool names in the excerpt are original source wording.
+
 Learn that good AI work is mostly prep. You find a problem in your own daily process, design a workflow to solve it, and build that workflow into a folder of context and directions. Then you point a model at the folder and let it do the work you designed.
 
 ## Overview

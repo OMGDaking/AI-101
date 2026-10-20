@@ -1,5 +1,7 @@
 # Revised-run status
 
+> Historical diagnostic output. Original source/tool wording is retained; current workflow runs use Codex. No additional run or human approval is claimed.
+
 Tool: Codex. Date: October 13, 2026. Mode: isolated diagnostic rerun of Step 3 under a tighter instruction, not a completed Claudian workflow.
 
 - Step 1: same demonstration input; user's original-reading check pending.

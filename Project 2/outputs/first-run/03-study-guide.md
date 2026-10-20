@@ -1,5 +1,7 @@
 # Study guide — first Codex demonstration
 
+> Historical diagnostic output. Original source/tool wording is retained; current workflow runs use Codex. No additional run or human approval is claimed.
+
 Date: October 13, 2026. Input: [[../../inputs/course-brief-excerpts]]. Prepared as an isolated diagnostic sample; no user approval of Step 2 is claimed. Human review and recall practice are pending.
 
 ## Key ideas

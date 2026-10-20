@@ -1,5 +1,7 @@
 # Start Here
 
+> Project platform: use Codex. This imported reference retains examples for other tools; follow the current project start file and Codex setup instructions instead of those installation examples.
+
 You just installed the ESF Companion.
 
 ---

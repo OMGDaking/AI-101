@@ -1,5 +1,7 @@
 # Start here: Build a study guide without outsourcing my learning
 
+> Archived October 13 directions. For current Codex instructions, use `../../00-start-here.md`; this snapshot preserves the original wording.
+
 ## Goal
 
 Turn a course document into a source-linked guide with separate concepts, assignment tasks, and unanswered practice questions that I answer myself.
