@@ -1,18 +1,17 @@
-# Step 2: Organize the source — MODEL
+# Step 2: Organize the document — MODEL
 
-**What starts it:** I approve Step 1 and name an input and run folder.
+**What starts it:** The user attaches a readable document, selects a file, or pastes clearly identified source text and requests a guide.
 
-**Input:** The selected original; demonstration input is [[inputs/course-brief-excerpts]].
+**Input:** Only the supplied or selected source and the user's requested guide preferences.
 
-**What it does:** Separate ideas to learn from tasks to complete.
+**What it does:** Identify material needed for a useful study guide.
 
-**Directions for the model:**
+1. Read the available source. Note its title or label and scope; disclose unreadable sections or partial extraction. Label pasted text as such.
+2. Identify key ideas, definitions, relationships, examples, and procedures using the document's headings and emphasis.
+3. Separate supported facts from missing details and conflicting claims. Record both source locations for a conflict; do not silently resolve it.
+4. Identify material suitable for recall questions and application practice. Do not invent missing methods, numbers, or explanations.
+5. Continue directly to Step 3 under the user's guide request. If a new run folder was selected, save `02-organized.md` there first; otherwise use this organization internally.
 
-1. Read the entire selected input.
-2. Make three sections: Concepts, Assignment tasks, and Open questions.
-3. Give each entry a source heading or page reference. For each task, name the required artifact and any stated deadline; say “not stated” when absent.
-4. Save `02-organized.md` in the selected run folder and stop for my review.
+**Good looks like:** Important material is traceable to the source, and uncertainties remain visible.
 
-**Good looks like:** Each concept and task can be traced to the original; unresolved details appear as questions.
-
-**How I check it:** Compare the list with the source. Reject invented tasks, dates, or explanations. Tell the model what to fix or explicitly approve Step 3.
+**How to check:** Verify candidate notes and questions against their source locations. Omit unsupported questions. If the source cannot support any meaningful guide, explain the limitation and ask for more material.

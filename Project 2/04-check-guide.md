@@ -1,23 +1,24 @@
-# Step 4: Verify the guide — HUMAN CHECK
+# Step 4: Check the finished guide — HUMAN CHECK
 
-**What starts it:** The model saves `03-study-guide.md`.
+**What starts it:** The model delivers the guide.
 
-**Input:** The guide, organization output, and original source.
+**Input:** The guide and original document; the organization output if saved.
 
-**What it does:** I decide whether the guide is accurate enough to study from.
+**What it does:** The user decides whether the guide is accurate enough to study from.
 
-**My checklist:**
+## Checklist
 
-- Every concept and task matches its cited source heading.
-- Every required artifact in the selected input appears in the checklist.
-- Deadlines match the original or say “not stated.”
-- The three practice questions are answerable from the original and have no supplied answers.
-- Missing context is visible; class labels are not silently converted into calendar dates.
+- Important notes match the document and cover its main topics.
+- Quiz questions test recall or understanding; practice questions ask for application.
+- Questions have enough information to be answered and cite the relevant source.
+- Missing details and conflicts are visible rather than guessed away.
+- Answers are omitted or provided separately as requested.
+- Source scope and any unreadable sections are disclosed.
 
-**Output:** `04-human-check.md` with my actual decision (approved, revise, or rejected), date, and specific corrections.
+**Output:** The user's actual keep/change/reject decision and corrections. If saving a run, record the supplied decision and date in `04-human-check.md`.
 
-**Good looks like:** I can point from each guide item to the original. My recorded decision explains any corrections.
+**Good looks like:** The user can trace the guide to the source and point to anything that needs changing.
 
-**How I check it:** Any failed item blocks Step 5. Return the failure to the relevant model step, check the revision, and approve only when satisfied.
+**How to check:** A pending or rejected check blocks recorded completion and Step 5. Revise the relevant notes or questions and ask the user to review again.
 
-**Model boundary:** Prepare a blank checklist if useful, but never fill my approval or impersonate me.
+**Model boundary:** Never fill in approval or impersonate the user. Creating a guide is not proof of verified accuracy or learning.

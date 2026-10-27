@@ -32,3 +32,23 @@ Codex built Workflow Quest, a visual five-station classroom game in `presentatio
 | 2026-10-13 | Revised demonstration, Step 4: assess review status.                            | outputs/revised-run/run-status.md records human check pending.                                                                                           | Blocked; actual verification still required.                                                                                                                  |
 | 2026-10-13 | Revised demonstration, Step 5: assess recall status.                            | Same status file records recall blocked.                                                                                                                 | Not performed; no student answers generated.                                                                                                                  |
 | 2026-10-13 | Install the ESF Companion files into Project 2, as my instructor requested.     | A reviewed installer was staged outside the vault; its project-local prompts and blank templates were added under `esf/toolkit/`.                       | The existing workflow and log were preserved; no global plugin or automatic instructions were enabled. My use/review is pending.                              |
+
+## User-directed workflow correction — October 20, 2026
+
+The user said: “i wanted something that you put a document in the prompt and it creates a guide for you where it gives you important notes and quiz questions and practice questions,” then explicitly asked to change Project 2.
+
+Codex revised `00-start-here.md`, all five step files, the README introduction, and Canvas transition labels. A guide request now authorizes organization and guide creation together, followed by human review. Defaults are five quiz questions and three application questions; these are AI implementation choices pending user review. Answers are omitted by default and can be requested separately. Previous workflow files were copied to `revisions/before-document-guide-2026-10-20/` before editing. Original outputs, personal intent draft, research, feedback, and the original decision note were preserved.
+
+Decision evidence: the user rejected the previous emphasis as disconnected and requested document-to-guide behavior. Review of this implementation is pending. No workflow run, human check, recall attempt, or learning result is claimed.
+
+## Pasted-notes test — October 20, 2026
+
+The user pasted “Data Analyst Career Paths — Study Notes” and said it was a test for the workflow, linking `project-03/audit-note.md`. Codex treated the pasted notes as the selected source and delivered a study guide in chat with important notes, five short-answer quiz questions, three application practice questions, and items to check. No stage files were saved because no run folder was selected. The user's accuracy review, keep/change/reject decision, and recall answers remain pending. This was a straightforward input test, not a completed stress test or evidence of learning.
+
+## Input-rule fix and same-notes rerun — October 20, 2026
+
+The user requested: “Update the input rule to allow attached documents, selected files, or pasted text. Run the same notes through it again and save the guide in project-03/outputs/. Record what changed in audit-note.md.” Codex updated `00-start-here.md` and `01-gather-input.md`, aligned supporting wording in `02-organize-source.md`, `03-build-guide.md`, and `README.md`, and generated `project-03/outputs/data-analyst-career-paths-rerun.md` from the same pasted career-path notes. The guide was also shown in chat. The user selected the output folder, not a Project 2 stage-file run folder, so no `02-organized.md` or `03-study-guide.md` was saved. No human accuracy review or learning outcome is claimed.
+
+## Study Showdown game — October 26, 2026
+
+The user asked for a Kahoot/Jeopardy-style game that takes a document or other study material and turns it into a quiz with points. Codex created a separate `study-showdown/` static Site with pasted-text and TXT/Markdown/PDF/DOCX input, browser-local draft cards, an editable human-review step, a Jeopardy-style board, 1–4 teams, speed and streak bonuses, one wager per team, deductions, steals, and card import/export. It was tested with the Data Analyst demo, the saved career-path Markdown guide, and synthetic PDF/DOCX files, then deployed privately at `https://study-showdown-ai101.luckylemur33.chatgpt.site`. The question drafting is deterministic, not AI-backed, and requires human review; this game is not evidence of completed study, source verification, Project 3 testing, or user approval.

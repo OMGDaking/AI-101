@@ -1,15 +1,92 @@
 {
-	"nodes":[
-		{"id":"step1","type":"file","file":"Project 2/01-gather-input.md","x":0,"y":90,"width":380,"height":440,"color":"4"},
-		{"id":"step2","type":"file","file":"Project 2/02-organize-source.md","x":430,"y":90,"width":380,"height":440,"color":"5"},
-		{"id":"step3","type":"file","file":"Project 2/03-build-guide.md","x":860,"y":90,"width":380,"height":440,"color":"5"},
-		{"id":"step4","type":"file","file":"Project 2/04-check-guide.md","x":1290,"y":90,"width":380,"height":440,"color":"1"},
-		{"id":"step5","type":"file","file":"Project 2/05-practice-recall.md","x":1720,"y":90,"width":380,"height":440,"color":"4"}
-	],
-	"edges":[
-		{"id":"edge1","fromNode":"step1","fromSide":"right","toNode":"step2","toSide":"left","toEnd":"arrow","label":"Explicit approval required"},
-		{"id":"edge2","fromNode":"step2","fromSide":"right","toNode":"step3","toSide":"left","toEnd":"arrow","label":"Explicit approval required"},
-		{"id":"edge3","fromNode":"step3","fromSide":"right","toNode":"step4","toSide":"left","toEnd":"arrow","label":"Stop for human check"},
-		{"id":"edge4","fromNode":"step4","fromSide":"right","toNode":"step5","toSide":"left","toEnd":"arrow","label":"Explicit approval required"}
-	]
+  "nodes": [
+    {
+      "id": "step1",
+      "type": "file",
+      "file": "Project 2/01-gather-input.md",
+      "x": 0,
+      "y": 90,
+      "width": 380,
+      "height": 440,
+      "color": "4"
+    },
+    {
+      "id": "step2",
+      "type": "file",
+      "file": "Project 2/02-organize-source.md",
+      "x": 430,
+      "y": 90,
+      "width": 380,
+      "height": 440,
+      "color": "5"
+    },
+    {
+      "id": "step3",
+      "type": "file",
+      "file": "Project 2/03-build-guide.md",
+      "x": 860,
+      "y": 90,
+      "width": 380,
+      "height": 440,
+      "color": "5"
+    },
+    {
+      "id": "step4",
+      "type": "file",
+      "file": "Project 2/04-check-guide.md",
+      "x": 1290,
+      "y": 90,
+      "width": 380,
+      "height": 440,
+      "color": "1"
+    },
+    {
+      "id": "step5",
+      "type": "file",
+      "file": "Project 2/05-practice-recall.md",
+      "x": 1720,
+      "y": 90,
+      "width": 380,
+      "height": 440,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "step1",
+      "fromSide": "right",
+      "toNode": "step2",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "Attach document and request guide"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "step2",
+      "fromSide": "right",
+      "toNode": "step3",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "Continue automatically to guide"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "step3",
+      "fromSide": "right",
+      "toNode": "step4",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "Deliver guide; stop for human check"
+    },
+    {
+      "id": "edge4",
+      "fromNode": "step4",
+      "fromSide": "right",
+      "toNode": "step5",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "Explicit approval required"
+    }
+  ]
 }

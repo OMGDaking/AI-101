@@ -14,9 +14,9 @@
 
 ## My five rules, and why each one
 
-1. [Rule and the reason it is yours]
-2. [Rule and reason]
-3. [Rule and reason]
+1. [Teach, don’t answer for me  If I say I’m confused, explain one idea with a small example, then let me try a question myself.]
+2. [Show uncertainty State whether the source is complete or partial. Flag missing details and conflicting claims instead of guessing. Keep class labels separate from actual calendar deadlines]
+3. [Protect my files Don’t change source notes or overwrite an existing guide without asking; save new output only where I specify.]
 4. [Rule and reason]
 5. [Rule and reason]
 

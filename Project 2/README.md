@@ -1,3 +1,13 @@
+# Project 2: Document-to-study-guide workflow
+
+Attach a document, select a file, or paste source text into a Codex prompt and receive **important notes, quiz questions, and practice questions**. Start with [[00-start-here]]; the prompt and current rules are there. Review the guide against your source, then use the questions to study.
+
+Revised October 20, 2026 at the user's request. The earlier workflow directions are preserved in `revisions/before-document-guide-2026-10-20/`. Existing outputs and the presentation game illustrate the earlier workflow. The new version has been tested on pasted notes; attached and selected-file inputs and human accuracy review remain pending. The original `intent.md` is retained as an older AI-assisted draft, not a newly confirmed personal statement.
+
+## Earlier project context and presentation
+
+The following text is preserved historical context; use `00-start-here.md` for current operation.
+
 # Project 2: Study-guide workflow
 
 ## Play the presentation game

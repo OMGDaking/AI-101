@@ -1,19 +1,20 @@
-# Step 5: Practice recall
+# Step 5: Use the questions — HUMAN
 
-**What starts this step:** The study guide and questions have passed my source check.
+**What starts it:** The user checks the guide and chooses to practice.
 
-**What goes in:** The guide, three source-linked questions, and the original reading.
+**Input:** The guide's quiz and practice questions and the original document.
 
-**What this step does:** I attempt the questions from memory and use the original to identify gaps.
+**What it does:** The user tests recall and applies the ideas.
 
-1. Close the guide and reading. Write my own answer to each question before viewing any model answer.
-2. Open the original and mark what my answer gets right, misses, or misstates, with a page or section reference.
-3. Return to the questions later, including ones I answered correctly the first time. The exact interval is my practical choice, not a prescription from these two studies.
+1. Attempt the quiz questions without looking at the notes or any answer key.
+2. Attempt the application practice questions and explain the reasoning.
+3. Compare answers with the original document and, if requested, a separate answer key. Note what was correct, missing, or mistaken.
+4. Choose which topics to revisit and when to try again.
 
-**Directions for the model:** If asked, suggest three questions answerable from the original and include page or section references. Keep suggested answers separate until after my attempt.
+**Model directions:** Offer explanations or a separate source-linked answer key when requested. Distinguish model examples from the user's attempts. Do not generate responses and label them as the user's answers.
 
-**Good looks like:** My record shows my initial answers and source-based corrections separately.
+**Output:** If requested, save the user's actual supplied answers and corrections in `05-recall-record.md` within the selected run folder.
 
-**Output:** Save my actual answers, corrections, and later attempt in `05-recall-record.md` in the selected run folder. The model must not fill this in for me.
+**Good looks like:** The record distinguishes the user's attempts from later explanations and corrections.
 
-**Human check:** I confirm each question matches the original. Reject or rewrite questions with unsupported premises before practicing. I decide whether my own answer is adequate by checking it against the original; an AI rating alone cannot mark it complete.
+**Human check:** The user decides what they understand and what needs more work. AI feedback alone does not establish learning.

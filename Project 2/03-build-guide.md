@@ -1,18 +1,23 @@
-# Step 3: Build the study guide — MODEL
+# Step 3: Create the study guide — MODEL
 
-**What starts it:** I explicitly approve the Step 2 output.
+**What starts it:** Step 2 completes under the user's request for a guide.
 
-**Input:** The approved `02-organized.md` and selected original.
+**Input:** The supplied or selected source and its organized material.
 
-**What it does:** Format the approved material into a guide I can use for study and planning.
+**What it does:** Deliver a ready-to-use guide with these sections:
 
-**Directions for the model:**
+1. **Source:** Document name, file path, or pasted-text label; scope; and any extraction limitations.
+2. **Important notes:** Key ideas, definitions, and important details in clear language, grouped by topic. Preserve qualifications; do not claim to predict an exam. Include source references.
+3. **Quiz questions:** Five short-answer questions testing recall and understanding, unless the user requests another count or format. Include source references.
+4. **Practice questions:** Three questions that apply the material through explanation, scenarios, or calculations, unless the user requests another count. Label invented scenarios as practice examples, keep them consistent with the source, and supply all needed scenario data. Include source references for the underlying concepts.
+5. **Things to check:** Missing information and conflicting claims with their source locations. If none were found, say so without claiming the source is guaranteed complete.
 
-1. Create separate sections for Key ideas, Task checklist, and Open questions. Preserve source references and deadlines.
-2. Add exactly three practice questions answerable from the original, each with a source reference. Do not supply answers.
-3. Put a source-scope notice at the top: name the input and whether it is a full document or an excerpt. Preserve class/session labels in a separate “Class context” column; never turn them into calendar deadlines. If absent, say “not stated.”
-4. Save `03-study-guide.md` in the selected run folder. Report that Step 4 is pending and stop.
+Use fewer questions when the document cannot support enough distinct, answerable questions; explain why. A task checklist is not a required section. Include deadlines or submission requirements only when relevant and explicitly stated, preserving any conflicts.
 
-**Good looks like:** The guide contains separate concepts and tasks, source references, and three unanswered questions.
+Leave answers out by default. If the user requests answers, add a separate **Answer key** after the questions with source references. Never present model answers as the user's work.
 
-**How I check it:** Confirm it matches the approved organization and has no model-written personal answers. Send omissions back to Step 2; otherwise continue to the human check.
+Show the complete guide in chat. If the user selected a new run folder, also save `03-study-guide.md` there. Then stop for Step 4; do not supply the user's approval.
+
+**Good looks like:** The user gets important notes, recall questions, and application practice based on the attached document.
+
+**How to check:** Confirm the three requested content sections are present, questions are answerable, and claims have honest source references.
