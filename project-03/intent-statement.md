@@ -1,25 +1,29 @@
-# intent-statement.md
+# Design intent — retrospective AI-assisted draft
 
-*Write this before you build, and do not edit it after. The gap between this page and your finished agents is part of what you defend. Delete the italic guidance lines before you submit.*
+**Important provenance:** Codex drafted this on October 27, 2026, after agent work had begun. It is not a pre-build statement in the student's own words. Dakota must review and revise it before presenting it as personal intent.
 
 ## What I am building
 
-**Part A.** [The step in your workflow an agent will take over.]
+**Part A:** A study-guide agent for the guide-building step of my Project 2 workflow. It turns one attached document, selected file, or pasted source into important notes, quiz questions, and application practice.
 
-**Part B.** [The vault agent: who it works for and what it protects.]
+**Part B:** A vault stewardship agent that keeps the guide traceable to its source, flags uncertainty, and stops before making my review or learning decisions for me.
 
 ## Why
 
-[What problem do these agents solve for you? Name a moment when you offloaded your thinking, or almost did.]
+I wanted a quicker way to turn study material into something I can practice with. The risk is accepting a polished guide or quiz answer without checking whether it matches the source. The agent should do the drafting while leaving accuracy checks and understanding to me.
 
-## The Project 2 workflow my skill will encode
+## Project 2 workflow to encode
 
-[Name the workflow and list its steps in order.]
+1. I choose one source.
+2. The model identifies key material and uncertainties.
+3. The agent drafts important notes, quiz questions, and application questions.
+4. I compare the guide with the source and choose what to keep, change, or reject.
+5. I answer the questions myself before seeing an answer key.
 
 ## What the agents must never decide
 
-[At least one choice that stays yours. This becomes a hard rule.]
+They cannot approve a guide for me, resolve unsupported source conflicts as fact, invent my answers, or claim I understand the material.
 
-## How I will know it works
+## Observable success test
 
-[One success test someone could observe. Not "the agent is helpful." What does the agent do that you can point to?]
+When given notes with contradictory definitions and missing calculation data, the agent identifies each conflict and omission, avoids an unanswerable calculation, and stops for my review.

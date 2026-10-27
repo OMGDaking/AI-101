@@ -52,3 +52,31 @@ The user requested: “Update the input rule to allow attached documents, select
 ## Study Showdown game — October 26, 2026
 
 The user asked for a Kahoot/Jeopardy-style game that takes a document or other study material and turns it into a quiz with points. Codex created a separate `study-showdown/` static Site with pasted-text and TXT/Markdown/PDF/DOCX input, browser-local draft cards, an editable human-review step, a Jeopardy-style board, 1–4 teams, speed and streak bonuses, one wager per team, deductions, steals, and card import/export. It was tested with the Data Analyst demo, the saved career-path Markdown guide, and synthetic PDF/DOCX files, then deployed privately at `https://study-showdown-ai101.luckylemur33.chatgpt.site`. The question drafting is deterministic, not AI-backed, and requires human review; this game is not evidence of completed study, source verification, Project 3 testing, or user approval.
+
+## Study Showdown arcade redesign — October 26, 2026
+
+The user asked, “can we make it look like a game though.” Codex redesigned the existing private Study Showdown Site with a Play the Demo start button, arcade-style stage and board, team avatars, animated score feedback, a visual countdown, and a winner/replay screen. The document import, editable cards, and human-review gate were retained. Local browser tests checked the new entry flow, board, clue screen, scoring, one-card win condition, replay, and mobile width. The user's assessment of the new look remains pending; the redesign does not establish learning or Project 3 completion.
+
+## Study Showdown host and Jeopardy table — October 27, 2026
+
+The user clarified that they wanted a character in the middle of a table, with selectable questions at different point values, Jeopardy-style. Codex generated a transparent robot host illustration with ImageGen, added a central game-show desk and live host prompts to the existing Site, and kept the selectable 100–500-point category board. The illustration and layout are AI-produced; the user has not yet reviewed or approved the result. This is a game presentation change, not a claim that generated questions or learning outcomes have been verified.
+
+## Study Showdown four-choice game and menu — October 27, 2026
+
+The user asked to replace answer reveal with four selectable choices (one correct, three false), permit outside-source ideas for wrong answers, and add an animated menu → rules → Solo Study or Vs a Friend mode flow. Codex revised the private Study Showdown Site accordingly. Distractors are drafted locally from optional pasted outside-source ideas and other card answers, then remain editable behind a human-review gate; the Site does not browse or verify external sources itself. Correctness, distractor quality, learning outcomes, and the user's acceptance of the new flow remain unverified.
+
+## Study Showdown character replacement — October 27, 2026
+
+The user supplied an image of a Mii-style avatar and asked to use that character instead of the robot. Codex used the built-in ImageGen background-extraction edit to create a transparent cutout and replaced the visible robot art on the menu, host table, and clue dialog. The supplied image is the reference; the cutout is AI-edited and may not be pixel-identical. The user's assessment of its likeness remains pending.
+
+## Study Showdown answer explanations — October 27, 2026
+
+The user asked for wrong answers to explain why they were wrong and what was right. Codex added editable explanations for all four choices, generated initial explanation drafts from the selected source and related cards where available, and required complete explanations before play. Solo mode shows both explanations after a wrong answer. Friend mode shows why the selected choice was wrong immediately, then reveals the correct answer and explanation after the steal attempt to avoid spoiling it. These drafts require human review; their accuracy and educational effect are not established.
+
+## Study Showdown optional music — October 27, 2026
+
+The user asked for instrumentals like Fujii Kaze. Codex added an optional original, browser-synthesized mellow keys-and-groove loop to the private Study Showdown Site, with menu and header controls. It is not an artist recording, melody, or arrangement; it starts only after a click and defaults off. This is an AI-assisted implementation, not a claim of musical equivalence or user approval.
+
+## Project 3 agent connection — October 27, 2026
+
+At the user's request to finish the agent, Codex created an AI-assisted proposed study-guide skill, five working hard rules, a voice profile, a Project 2 agent copy, and a root `AGENTS.md` link. Project 2 Step 3 now points to that agent. Controlled same-session drafts and probes were saved under `project-03/outputs/` and recorded in Project 3. The user's accuracy review, personal rule wording, keep/change/reject decision, and independent new-session test remain pending.

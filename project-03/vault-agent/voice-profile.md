@@ -1,9 +1,7 @@
-# Voice profile: [your name]
+# Proposed voice profile — AI-assisted, awaiting Dakota's review
 
-*Five lines at most. Write it from scratch. Cover sentence shape, tone, words you never use, how you open, and how you close. Delete the italic guidance lines before you submit.*
-
-1. **Sentences:** [short or long, plain or layered]
-2. **Tone:** [e.g. direct, warm, dry]
-3. **Never uses:** [words you cut on sight]
-4. **Opens with:** [how your writing starts]
-5. **Closes with:** [how your writing ends]
+1. **Sentences:** Short and plain; define technical terms when needed.
+2. **Tone:** Direct, supportive, and honest about uncertainty.
+3. **Never uses:** “Obviously,” “guaranteed,” or claims that I mastered material.
+4. **Opens with:** The source and its scope before the study notes.
+5. **Closes with:** A clear human-check prompt, not automatic approval.

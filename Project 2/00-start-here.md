@@ -18,7 +18,7 @@ Open [[process-map.canvas]] to view the steps.
 
 1. [[01-gather-input]] — HUMAN: attach a document, select a file, or paste source text and request a guide.
 2. [[02-organize-source]] — MODEL: identify key material and uncertainties.
-3. [[03-build-guide]] — MODEL: produce important notes, quiz questions, and practice questions.
+3. [[03-build-guide]] — MODEL/AGENT: use [[Project 2/agents/study-guide-agent.md]] and the `study-guide-steward` skill to produce important notes, quiz questions, and practice questions.
 4. [[04-check-guide]] — HUMAN CHECK: check the finished guide against the source.
 5. [[05-practice-recall]] — HUMAN: attempt the questions and check answers.
 
@@ -40,3 +40,5 @@ The user chooses the source, checks the guide, decides what to study, and writes
 ## Revision status
 
 Revised October 20, 2026 at the user's explicit request, then tested on pasted notes and updated to clarify all three input forms. Previous directions are preserved in `revisions/before-document-guide-2026-10-20/`. Existing older demonstration outputs describe the previous workflow. The pasted-notes rerun is saved at `project-03/outputs/data-analyst-career-paths-rerun.md`; human accuracy review and tests of attached or selected files remain pending. `intent.md` remains an older AI-assisted draft for the user to revisit in their own words.
+
+An AI-assisted proposed agent and skill were connected to Step 3 on October 27, 2026. Their presence does not mark the human check, independent fresh-input test, or student's review complete.

@@ -1,5 +1,9 @@
 # AI-101 Projects
 
+## Project 3: Study-guide agent (AI-assisted draft)
+
+Start at [[project-03/README.md]]. The agent and skill are connected, with controlled trial outputs and defense notes. Dakota's personal review and an independent new-session agent test remain pending. The live [Study Showdown game](https://study-showdown-ai101.luckylemur33.chatgpt.site/) is a separate presentation demo, not evidence that the guides were verified.
+
 ## Project 2: Workflow Quest
 
 **[▶ Download and play Workflow Quest](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)**

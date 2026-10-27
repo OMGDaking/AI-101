@@ -1,6 +1,6 @@
 # audit-note.md
 
-Status: AI-assisted record updated October 20, 2026 after the user requested an input-rule fix and rerun. The pasted-text input test, fix, and same-input rerun are recorded below. Human accuracy review and the separate missing/conflicting-facts stress test remain pending. The workflow-agent draft was created before this audit was completed.
+Status: AI-assisted record updated October 27, 2026. The pasted-text input test, fix, and same-input rerun are recorded below. A later same-session controlled trial used the separate missing/conflicting-facts notes; independent agent testing and human accuracy review remain pending. The workflow-agent draft began before this audit was completed.
 
 ## The workflow I audited
 
@@ -10,7 +10,7 @@ Project 2 — Document-to-study-guide workflow. It turns an attached document, s
 
 The user pasted “Data Analyst Career Paths — Study Notes” into chat and requested a workflow test. This tested a source channel that the original input rule did not explicitly allow: pasted text rather than an attachment or selected file. The user then requested that the rule permit all three input forms and that the exact same notes be rerun.
 
-A separate fictional input, `inputs/stress-test-notes.md`, contains missing information and conflicting claims. No saved run of that separate stress-test input is available in `outputs/`.
+A separate fictional input, `inputs/stress-test-notes.md`, contains missing information and conflicting claims. On October 27, Codex used it for the controlled Project 2 and proposed-agent drafts in `outputs/`. Those drafts are not independent sessions or a student-approved guide.
 
 ## What happened
 
@@ -35,3 +35,7 @@ AI observation for the user to revise: Step 1's source-intake wording was weaker
 ## Preliminary test observation — October 20, 2026
 
 The user pasted “Data Analyst Career Paths — Study Notes” in chat and called it a workflow test. Codex treated that text as the selected source and delivered a study guide in chat. This exposed the input-rule ambiguity that the later fix above addressed. The first-run guide remains in the conversation rather than as a saved file; the rerun is saved in `outputs/`. The user's accuracy check is still pending.
+
+## Later controlled stress-note trial — October 27, 2026
+
+At the user's request to finish the agent, Codex drafted [[project-03/outputs/p2-run-stress-notes.md]] and [[project-03/outputs/agent-run-stress-notes.md]] from the same fictional stress notes. Both flag the conflicting definitions and assignment instructions and avoid calculating accuracy without a total. The proposed agent output adds an explicit uncertainty table. [[project-03/run-comparison.md]] records the differences and limits. This later trial does not retroactively change what was tested in the October 20 input-rule audit.

@@ -1,16 +1,11 @@
 # ai-use-log.md
 
-*Log every prompt and every output, in order. An entry takes one minute. A missing entry reads as a missing run. Delete the italic guidance lines before you submit.*
-
 | Date | What I asked the model to do | What it produced | What I kept, changed, or rejected |
 |------|------------------------------|------------------|------------------------------------|
 | 2026-10-15 | Update tool instructions because I use Codex. | Codex-specific setup guidance in the packet, agent template, skill template, and disclosure example. | Changed tool directions at my request; no agent design, testing, or human decisions were completed. |
 | 2026-10-20 | “can you make a note of missing infromation or conflicting facts” | Created `inputs/stress-test-notes.md`: fictional practice notes with conflicting definitions and assignment requirements, missing details, and an incomplete calculation. | Saved as an audit input; user review and the workflow stress test are pending. |
-| [date] | | | |
 | 2026-10-20 | Clarified that the tool should take an attached document and create important notes, quiz questions, and practice questions; asked “can you change it to how i want it”. | Replaced the Project 3 workflow-agent template with an untested document-to-study-guide draft. Project 2 and the personal intent, voice, rules, and defense files were preserved. | User requested the direction change; review of the draft, question-count defaults, and answer-key preference is pending. No audit or test completion claimed. |
-| [date] | | | |
-
-*Best practice: log the run before you fix anything. The first run's flaws are the material for your testing log.*
+| 2026-10-27 | “can we finish the agent and can you fill it in i have no time just explain it to me” | Codex drafted the intent, rules, voice, agent files, skill, controlled same-source comparison, fresh-input trial, preliminary rule probe, defense notes, disclosure, and connections. | User requested completion under time pressure. Dakota's review, independent agent test, and keep/change/reject decision remain pending; no student-authored rules are claimed. |
 
 ## October 20, 2026 — Project 2 direction change
 

@@ -1,25 +1,23 @@
-# run-comparison.md
+# Run comparison — AI-assisted controlled trial
 
-*Run the workflow with the agent, save the output, and compare it to your Project 2 run. Better or worse, say which. Delete the italic guidance lines before you submit.*
+**Limit:** Codex drafted both outputs in the same session on October 27, 2026. These are two instruction-set trials on identical source text, not two independent agent sessions or Dakota's own evaluation.
 
 ## The two runs
 
-| | Project 2 run | Agent run |
+| | Project 2 step trial | Proposed agent trial |
 |---|---|---|
-| Saved output | [file name in `outputs/`] | [file name in `outputs/`] |
-| Input used | [same input for both] | [same input for both] |
-| Step file or agent | [step file name] | [agent file name] |
+| Saved output | [[outputs/p2-run-stress-notes.md]] | [[outputs/agent-run-stress-notes.md]] |
+| Input | `inputs/stress-test-notes.md` | The same file |
+| Instructions | `Project 2/03-build-guide.md` | `workflow-agent.md` plus `study-guide-steward` skill |
 
-*Use the same input for both runs. Otherwise the comparison means nothing.*
+## Observable differences
 
-## What changed
+Both outputs preserve the A/B definition conflicts, C/D assignment conflict, and missing total in E. Neither calculates a percentage. The agent trial adds an explicit **uncertainty triage table** that maps each issue to evidence and the information needed to resolve it. It also says more directly that the fifth quiz question must be answerable without picking a side.
 
-[Name specific differences you can point to in the two outputs.]
+## Better or worse — AI observation, not Dakota's call
 
-## Better or worse
+The agent trial is easier to audit because the conflict map is explicit. It is longer, though, and could be excessive for short, clean notes. Dakota has not yet chosen which version to keep or whether the added table is worth its length.
 
-[Your call, with evidence. If the agent made it worse, say so. That finding counts.]
+## Next proposed edit
 
-## What I would change next
-
-[The next edit to the agent file, and why.]
+Make the conflict table conditional: include it when two or more unresolved issues materially affect the questions; otherwise use a short Things to check list. Dakota must decide whether to make this change after reading both outputs.

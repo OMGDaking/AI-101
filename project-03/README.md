@@ -1,5 +1,7 @@
 # Project 3 packet
 
+**Current status (October 27, 2026):** Codex filled the agent, rules, skill, comparison, preliminary trials, disclosure, and defense notes at the user's request. These are AI-assisted proposals, not independently written student decisions or a verified independent agent run. Dakota still needs to review the five rules, check the guides, run the connected skill in a new Codex session, and make the final keep/change/reject call. The original assignment guidance below remains for reference.
+
 Every file you need for Project 3 is in this folder, in the order you use them. The full brief is on the course site: [Project 3, Extend and Encode](https://ai-101-v4.vercel.app/projects/project-3).
 
 ## Your tool: Codex

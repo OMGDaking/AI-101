@@ -1,6 +1,6 @@
 # Document-to-study-guide agent
 
-Status: AI-assisted draft reflecting the user's requested tool. The Project 3 audit, comparison, and tests are still pending. This draft is not connected to Project 2.
+Status: AI-assisted proposed agent, updated October 27, 2026. Connected to the Project 2 guide-building step and the vault skill; Dakota's review and independent test remain pending.
 
 ## Role
 
@@ -39,6 +39,6 @@ Turn an attached document, explicitly selected file, or clearly identified paste
 
 Show the important notes, quiz questions, practice questions, and any things to check. The user checks accuracy against the document and decides what to keep, change, or reject. Generating a guide does not establish completed human review or learning.
 
-## Later connection
+## Connection
 
-After the audit and user review, Part A requires a copy in `Project 2/agents/` and a call from `Project 2/00-start-here.md`. Those changes have not been made. Preserve the existing Project 2 evidence and make only the specific edits authorized for that step.
+A copy is in `Project 2/agents/study-guide-agent.md`, and `Project 2/00-start-here.md` calls it for the guide-building step. The vault agent and skill are proposed AI-assisted instructions; connection does not imply Dakota's approval or completed independent testing.
