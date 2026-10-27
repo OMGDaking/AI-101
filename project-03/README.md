@@ -1,14 +1,23 @@
-# Project 3 packet
+# Project 3 — study-guide agent
 
-**Current status (October 27, 2026):** Codex filled the agent, rules, skill, comparison, preliminary trials, disclosure, and defense notes at the user's request. These are AI-assisted proposals, not independently written student decisions or a verified independent agent run. Dakota still needs to review the five rules, check the guides, run the connected skill in a new Codex session, and make the final keep/change/reject call. The original assignment guidance below remains for reference.
+**Current status (October 27, 2026):** The agent, rules, skill, comparison, preliminary trials, disclosure, and defense notes are filled in and connected. They are **AI-assisted proposals**, not independently written student decisions or a verified separate-session agent run.
 
-Every file you need for Project 3 is in this folder, in the order you use them. The full brief is on the course site: [Project 3, Extend and Encode](https://ai-101-v4.vercel.app/projects/project-3).
+## Quick path
+
+1. **Why and what changed:** [Audit note](audit-note.md) and [intent statement](intent-statement.md) (the intent is retrospective, not pre-build).
+2. **Agent design:** [Workflow agent](workflow-agent.md), [vault agent](vault-agent/AGENTS.md), [hard rules](vault-agent/hard-rules.md), and [study-guide skill](vault-agent/skills/study-guide-steward/SKILL.md).
+3. **Evidence and limits:** [Run comparison](run-comparison.md), [testing log](testing-log.md), and [saved outputs](outputs/README.md).
+4. **Present:** [Defense notes](defense-notes.md) and [disclosure](disclosure.md).
+
+**Still yours to do:** Review/rewrite the five rules in your words, check guide accuracy, test the connected skill in a fresh Codex session, and record your final keep/change/reject decision. Do not describe the current controlled drafts as independent runs.
+
+The original assignment guidance is below. The full brief is on the course site: [Project 3, Extend and Encode](https://ai-101-v4.vercel.app/projects/project-3).
 
 ## Your tool: Codex
 
 Use Codex for the audit, workflow-agent runs, and vault-agent tests. Obsidian is where you organize and view the Markdown and Canvas files. Completed skills belong in `.agents/skills/` at the vault root; Codex instructions belong in the root `AGENTS.md`. Finish the agent and rules before connecting them. The packet's `vault-agent/CLAUDE.md` is an unused compatibility stub.
 
-## Import it
+## Original packet import directions (already done)
 
 1. Unzip the packet.
 2. Drag the `project-03` folder into your Obsidian vault, next to your `project-02` folder.
@@ -25,13 +34,13 @@ Use Codex for the audit, workflow-agent runs, and vault-agent tests. Obsidian is
 | 11 | `vault-agent/AGENTS.md` | Part B. Name the agent's identity, permissions, and limits. |
 | 11 | `vault-agent/voice-profile.md` | Five lines, written from scratch. |
 | 11 | `vault-agent/hard-rules.md` | Five rules in your own words. One is a teaching rule. |
-| 11 | `vault-agent/skills/skill-name/SKILL.md` | Encode your Project 2 workflow. Include one complex step. |
+| 11 | `vault-agent/skills/study-guide-steward/SKILL.md` | Encodes the Project 2 workflow, including uncertainty triage. The `skill-name/` folder is an unused superseded template. |
 | 11 | `testing-log.md` | Log the caught-violation demo and the fresh-input test. |
 | 9 to 12 | `ai-use-log.md` | Log every prompt, output, and decision. |
 | 12 | `defense-notes.md` | Plan your live defense. |
 | 12 | `disclosure.md` | State what AI contributed and what you decided. |
 
-Replace every `[bracketed placeholder]` with your own words. Delete the italic guidance lines before you submit.
+Before submitting, replace any remaining personal judgments with your own words and keep the AI contribution disclosed. The original packet asked for a pre-build intent; the current intent file truthfully labels itself retrospective.
 
 ## Submit
 

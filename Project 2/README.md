@@ -1,6 +1,8 @@
 # Project 2: Document-to-study-guide workflow
 
-Attach a document, select a file, or paste source text into a Codex prompt and receive **important notes, quiz questions, and practice questions**. Start with [[00-start-here]]; the prompt and current rules are there. Review the guide against your source, then use the questions to study.
+Attach a document, select a file, or paste source text into a Codex prompt and receive **important notes, quiz questions, and practice questions**. Start with [[Project 2/00-start-here.md]]; the prompt and current rules are there. Review the guide against your source, then use the questions to study.
+
+**Presentation route:** [[PRESENTATION.md]] gives the short vault walkthrough. [Study Showdown](https://study-showdown-ai101.luckylemur33.chatgpt.site/) is a separate, live quiz-game demo built from the study-guide direction. Its cards still need human review.
 
 Revised October 20, 2026 at the user's request. The earlier workflow directions are preserved in `revisions/before-document-guide-2026-10-20/`. Existing outputs and the presentation game illustrate the earlier workflow. The new version has been tested on pasted notes; attached and selected-file inputs and human accuracy review remain pending. The original `intent.md` is retained as an older AI-assisted draft, not a newly confirmed personal statement.
 
@@ -14,15 +16,15 @@ The following text is preserved historical context; use `00-start-here.md` for c
 
 **[▶ Download and play Workflow Quest — CY-7 Recovery Lab](https://github.com/OMGDaking/AI-101/raw/refs/heads/main/Project%202/presentation-game/Workflow-Quest.zip)**
 
-In Obsidian, the game needs a browser. Download the ZIP above, unzip it, then use Finder → right-click `Play-Workflow-Quest.html` → **Open With → Chrome or Safari**. See the [game instructions](presentation-game/README.md).
+Workflow Quest is an earlier, separate offline presentation game. Download the ZIP above, unzip it, then use Finder → right-click `Play-Workflow-Quest.html` → **Open With → Chrome or Safari**. See the [game instructions](presentation-game/README.md).
 
 Click a failed checkpoint, inspect the evidence, and choose a repair. Correct decisions restore stations; missed checks stay red. Try to restore all five, then reboot for another round. Play individually or let the class vote.
 
-Download the ZIP using the link above, unzip it, then right-click `Play-Workflow-Quest.html` and choose **Open With → Chrome or Safari**. The game runs offline. The AI-101 repository remains private, so viewers need access to download it. There is no hosted game URL.
+Workflow Quest runs offline. The AI-101 repository remains private, so viewers need access to download it. The live Study Showdown demo linked above is a different game.
 
 The game illustrates the workflow. Actual Codex workflow runs, personal checks, and peer feedback are documented separately below.
 
-Start with [[00-start-here]] and open [[process-map.canvas]] in Obsidian.
+Start with [[Project 2/00-start-here.md]] and open [[Project 2/process-map.canvas]] in Obsidian.
 
 ## What is prepared
 
@@ -41,6 +43,6 @@ Existing examples are diagnostic Codex demonstrations; they do not establish com
 
 ## Instructor-directed ESF Companion toolkit (added October 13, 2026)
 
-The project-local `esf/toolkit/` files came from the reviewed [ESF Companion installer](https://github.com/nmadrid27/esf-companion) (release `companion-v0.11.0`). The toolkit is retained as imported reference material. For current Codex instructions, start with [[00-start-here.md]] and the Project 3 README; older platform-specific installation examples in the toolkit are not setup steps for you. Your existing [[00-start-here.md]] workflow and human review rules remain authoritative.
+The project-local `esf/toolkit/` files came from the reviewed [ESF Companion installer](https://github.com/nmadrid27/esf-companion) (release `companion-v0.11.0`). The toolkit is retained as imported reference material. For current Codex instructions, start with [[Project 2/00-start-here.md]] and [[project-03/README.md]]; older platform-specific installation examples in the toolkit are not setup steps for you. The current workflow and human review rules remain authoritative.
 
-You confirmed that your instructor asked you to install it. This project-local install copies prompts and blank templates only. It does **not** install the global Codex plugin, turn on always-on instructions, fill in your personal Position Statement, or replace [[ai-use-log.md]].
+You confirmed that your instructor asked you to install it. This project-local install copies prompts and blank templates only. It does **not** install the global Codex plugin, fill in your personal Position Statement, or replace [[Project 2/ai-use-log.md]].

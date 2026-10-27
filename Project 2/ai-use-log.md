@@ -80,3 +80,7 @@ The user asked for instrumentals like Fujii Kaze. Codex added an optional origin
 ## Project 3 agent connection — October 27, 2026
 
 At the user's request to finish the agent, Codex created an AI-assisted proposed study-guide skill, five working hard rules, a voice profile, a Project 2 agent copy, and a root `AGENTS.md` link. Project 2 Step 3 now points to that agent. Controlled same-session drafts and probes were saved under `project-03/outputs/` and recorded in Project 3. The user's accuracy review, personal rule wording, keep/change/reject decision, and independent new-session test remain pending.
+
+## Presentation cleanup — October 27, 2026
+
+The user asked to clean up both the Vault presentation path and Study Showdown's appearance. Codex reorganized the root and Project 3 README entry points, added a one-page presentation path, and reduced visual clutter in the Site's menu, cards, and board styling without changing game logic. This is AI-assisted presentation work; the user's review of the look and the study material remains pending.
