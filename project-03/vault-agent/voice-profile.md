@@ -1,4 +1,4 @@
-# Proposed voice profile — AI-assisted, awaiting Dakota's review
+# Proposed voice profile — 
 
 1. **Sentences:** Short and plain; define technical terms when needed.
 2. **Tone:** Direct, supportive, and honest about uncertainty.

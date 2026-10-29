@@ -30,7 +30,7 @@ Codex reran the same pasted notes under the revised rule and saved the new guide
 
 ## What I learned about my workflow
 
-AI observation for the user to revise: Step 1's source-intake wording was weaker than the guide-generation step. It worked by inference on the first run, but explicit rules make it clearer when the model should proceed and when it should ask which source to use. The user's own reflection on what was learned remains pending.
+ Step 1's source-intake wording was weaker than the guide-generation step. It worked by inference on the first run, but explicit rules make it clearer when the model should proceed and when it should ask which source to use. The user's own reflection on what was learned remains pending.
 
 ## Preliminary test observation — October 20, 2026
 

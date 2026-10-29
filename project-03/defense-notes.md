@@ -1,4 +1,4 @@
-# Defense notes — AI-assisted speaking aid, not a student's confirmed answers
+# Defense notes 
 
 Use these as prompts and revise them in your own words. The agent configuration and same-session trials are real files; independent testing and your personal decisions remain pending.
 

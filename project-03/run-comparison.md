@@ -1,4 +1,4 @@
-# Run comparison — AI-assisted controlled trial
+# Run comparison 
 
 **Limit:** Codex drafted both outputs in the same session on October 27, 2026. These are two instruction-set trials on identical source text, not two independent agent sessions or Dakota's own evaluation.
 

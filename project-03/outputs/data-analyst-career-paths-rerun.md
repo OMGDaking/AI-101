@@ -1,6 +1,6 @@
 # Study guide: Data Analyst career paths
 
-**Source:** “Data Analyst Career Paths — Study Notes,” pasted by the user in chat. This is the supplied text, not a verified complete course document. References below point to its numbered sections.
+**Source:** “Study Notes,” pasted by the user in chat. This is the supplied text, not a verified complete course document. References below point to its numbered sections.
 
 ## Important notes
 

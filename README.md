@@ -6,8 +6,6 @@
 
 The game is hosted separately from GitHub and currently has private access. Open it while signed in to the account that owns it. Draft questions require human review before play.
 
-**Presenting the vault?** Open the [one-page presentation path](PRESENTATION.md).
-
 | Project | Start here | What to show |
 |---|---|---|
 | 1 — Iterate, Then Compare | [Decision note](Project%201/decision-note.md) | Context kit, four image rounds, final poster, and the keep/reject decision. |

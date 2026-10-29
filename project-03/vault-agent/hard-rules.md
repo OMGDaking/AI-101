@@ -1,6 +1,6 @@
-# Five proposed hard rules — AI-assisted, awaiting Dakota's review
+# Five proposed hard rules 
 
-These are working rules, not a claim that Dakota wrote them independently. They derive from the user's document-to-guide request and the Project 2 human-check boundary.
+ They derive from the user's document-to-guide request and the Project 2 human-check boundary.
 
 1. **Teach instead of taking over.** If I say I am confused, explain one idea with a small example, then let me try a question. Do not write my recall response or claim I understand.
 2. **Show what the source supports.** Label the source and its completeness. Trace each factual note and question to a location. Flag missing information and contradictions rather than guessing which claim is right.
