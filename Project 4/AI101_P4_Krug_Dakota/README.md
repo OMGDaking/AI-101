@@ -4,13 +4,13 @@
 
 ## Open the build
 
-The working app is in `build/index.html`, with its JavaScript, model, piano samples and score files beside it. A local web server is required for browser module and asset loading.
+[Open Keyline live](https://keyline-piano-canx20.daking07.chatgpt.site/) in a browser signed in to the ChatGPT account that owns the site. Use this link for the version with background music.
 
-From this folder, run `python3 -m http.server 8094 --bind 127.0.0.1`, then open <http://127.0.0.1:8094/build/>. On macOS, `serve.command` runs the same server if Python 3 is installed. Stop it with Control-C. No dependency installation or API key is needed to run the copied build. Internet access may still be needed for the existing web font imports.
+For the classroom copy on your Mac, double-click `serve.command` in Finder. Keep that Terminal window open, then click [Open the local classroom demo](http://127.0.0.1:8094/build/). If the browser says it can't connect, start the server first. You can also run `python3 -m http.server 8094 --bind 127.0.0.1` from this folder. Press Control-C in Terminal when you finish.
+
+The classroom copy runs from `build/index.html` with the assets beside it. Its local server loads the JavaScript, models and samples without a ChatGPT sign-in or API key. Internet access may still be needed for the web fonts.
 
 Skip the optional intro, choose Lessons, and select Meet middle C. Press Watch. After the demonstration, try D4 once and then tap C4 four times, releasing between taps. D4 should leave the phrase waiting. The correct notes should complete it. Use a fresh browser origin for an untouched progress state.
-
-The personal live site is https://keyline-piano-canx20.daking07.chatgpt.site/. It may require the owner's signed-in account. The local classroom copy does not depend on that account.
 
 ## Build provenance
 
