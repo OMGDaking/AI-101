@@ -1,0 +1,290 @@
+.practice-app{--app-panel:#151923}.practice-app main{max-width:1600px;padding:18px 3%}.practice-app header{height:72px;margin:0 3%}.practice-app .intro,.practice-app .intro-note,.practice-app .studio-paths,.practice-app .play-invitation,.practice-app footer{display:none}.practice-app .workspace{display:block;border:0;background:transparent}.practice-app aside{display:none}.practice-app.show-library aside{display:block;border:1px solid var(--line);border-radius:14px;margin-bottom:20px}.practice-app .studio{padding:0;background:transparent}.practice-app .studio-head{padding:6px 0 12px}.practice-app .studio-head h2{margin:8px 0;font-size:29px}.practice-app .studio-head p{margin-bottom:10px}.practice-app .draft-banner{font-size:10px;max-height:50px;overflow:auto}.practice-app .keyboard-stage{height:130px!important}.practice-app #movingHand,.practice-app #movingLeftHand,.practice-app .motion-caption,.practice-app #motionToggle{display:none!important}.practice-app .hand-guide{margin-top:18px}.practice-app .both-hand-diagrams{max-width:430px;margin:auto}.practice-app .guide-hand-card svg{max-height:150px}.practice-app #learnView .roll{height:210px}.practice-app .key span{font-size:9px}.practice-app #coach{background:#191e29;border:1px solid #343e50;border-radius:14px;padding:20px;margin-bottom:18px;color:#f0e8e6}.coach-top,.coach-options,.coach-actions,.coach-nav{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.coach-top{justify-content:space-between;font-size:11px;letter-spacing:1px;color:#dda9b6}.coach-options{margin-top:16px}.coach-options label{display:flex;gap:8px;align-items:center;font-size:12px}#coach select,#coach button{border:1px solid #485064;background:#262e3e;color:#f4e9ea;border-radius:9px;padding:10px;font-size:12px}#coach .coach-actions button:first-child{background:#aa6679}#coach .coach-actions button:nth-child(2){background:#406c5e}#coach button:disabled{opacity:.4;cursor:default}.coach-note{font-size:11px;color:#aeb8c8!important;line-height:1.6}.coach-nav{justify-content:space-between}#coachMessage{min-height:22px;color:#e5e7f0;font-size:14px}#coachProgress{width:100%;height:5px;accent-color:#8fcbaf;margin:0 0 15px}.key.expected{outline:2px solid #ffca78;outline-offset:-3px}#learnView .key.black.expected{outline-color:#ffca78}.practice-app .transport{position:sticky;bottom:0;background:#151923;padding:14px;border-radius:12px;z-index:8}.practice-app .hand-top h3{font-size:22px}.practice-app .hand-body{padding-bottom:12px}[data-theme=light] #coach{background:#eee7e2;color:#302d2b}[data-theme=light] #coachMessage{color:#302d2b}@media(max-width:760px){.practice-app header{height:auto;min-height:76px}.practice-app .private{display:none}.practice-app main{padding:12px}.coach-options label{width:100%;justify-content:space-between}.coach-options select{max-width:65%}.practice-app .studio-head{align-items:start}.practice-app .studio-head h2{font-size:24px}.practice-app .export-actions{max-width:85px}#coach{padding:14px!important}.practice-app #learnView .roll{height:190px}.practice-app .transport{gap:7px;padding:10px}.practice-app .hand-body{display:block}}
+/* Quiet home hub; each destination is a single circular target. */
+#homeScreen{display:none}.home-view #homeScreen{display:block}.home-view main{display:none}.home-view #goHome,.home-view #appLibrary{display:none}#homeScreen{max-width:1120px;margin:auto;text-align:center;padding:65px 24px 26px}#homeScreen h1{font:64px/1.1 'Instrument Serif',Georgia,serif;letter-spacing:-1.7px;margin:12px 0 14px}#homeScreen .eyebrow{color:#c18c99}#homeScreen .home-subtitle{font-size:15px;color:#a6a2ae;margin-bottom:48px}.home-bubbles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;align-items:center}.home-bubble{aspect-ratio:1;border-radius:50%;border:1px solid #4c3b49;background:radial-gradient(circle at 35% 25%,#332732,#191a23 80%);color:#f3e9e9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:15px;box-shadow:inset 0 1px 0 #ffffff0b,0 12px 32px #0002;transition:transform .2s,border-color .2s}.home-bubble:hover{transform:translateY(-5px);border-color:#c18c99}.home-bubble:focus-visible{outline:3px solid #d5a7b3;outline-offset:6px}.bubble-icon{font:38px Georgia,serif;color:#dca5b1}.home-bubble strong{font-size:17px;font-weight:500}.home-bubble small{font-size:10px;color:#aaa0ad;line-height:1.5}.locker-bubble{background:radial-gradient(circle at 35% 25%,#2b2c3e,#191a23 80%);border-color:#42445b}.locker-bubble .bubble-icon{color:#bcb4e2}.import-bubble{background:radial-gradient(circle at 35% 25%,#223332,#191a23 80%);border-color:#38504c}.import-bubble .bubble-icon{color:#9bc2b4}.settings-bubble{background:radial-gradient(circle at 35% 25%,#302c27,#191a23 80%);border-color:#4e453c}.settings-bubble .bubble-icon{color:#d2baa0}.home-continue{border:1px solid #3c3d49;border-radius:30px;background:transparent;color:#c4b2bb;padding:13px 24px;margin-top:46px;font-size:12px;max-width:100%}.home-footer{font:italic 17px Georgia,serif;color:#776b78!important;margin-top:38px}.settings-dialog{width:min(540px,92vw);border:1px solid #3d3542;border-radius:20px;padding:28px}.settings-heading{display:flex;justify-content:space-between;align-items:start}.settings-heading h2{font-size:34px;margin:6px 0 25px}.setting-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;border-top:1px solid #ffffff15}.setting-row strong{font-size:14px}.setting-row p{font-size:11px;line-height:1.6;color:#a99eac}.setting-row button{border:1px solid #62505e;border-radius:22px;background:#342730;color:#efc8d2;padding:10px 15px;white-space:nowrap;font-size:11px}#themeToggle[aria-checked=false]{background:#e9dfd7;color:#63514e;border-color:#c8bab0}.home-view .private{color:#8c8693}
+[data-theme=light] .home-bubble{background:radial-gradient(circle at 35% 25%,#fffaf5,#eee6df);border-color:#d8c8c5;color:#443b3a;box-shadow:0 10px 30px #68514409}[data-theme=light] .home-bubble strong{color:#443b3a}[data-theme=light] .home-bubble small{color:#8b7879}[data-theme=light] .home-subtitle{color:#8b7879!important}[data-theme=light] .bubble-icon{color:#a67380}[data-theme=light] .home-continue{color:#735a63;border-color:#d7c8c5}[data-theme=light] .setting-row{border-color:#d9cbc5}[data-theme=light] .settings-dialog{background:#faf5ef;color:#443b3a}
+@media(max-width:800px){#homeScreen{padding-top:40px;max-width:580px}.home-bubbles{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}#homeScreen h1{font-size:52px}#homeScreen .home-subtitle{margin-bottom:30px}.home-continue{margin-top:30px}.home-footer{margin-top:25px}}
+@media(max-width:450px){#homeScreen{padding:30px 22px}.home-bubbles{gap:18px}.home-bubble{gap:9px}.home-bubble strong{font-size:14px}.home-bubble small{font-size:9px}.bubble-icon{font-size:29px}#homeScreen h1{font-size:45px}.settings-dialog{padding:21px}.setting-row{gap:12px}}
+@media(prefers-reduced-motion:reduce){.home-bubble{transition:none}.home-bubble:hover{transform:none}}
+
+/* Rounded, diagram-like hand art. No nails, creases, or stretched skin textures. */
+.smooth-hand-art .unified-hand{stroke:#987b75;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.smooth-hand-art .finger-number circle{fill:#fff6ed;stroke:none;transition:fill .15s}
+.smooth-hand-art .finger-number text{fill:#73534f;font-weight:600}
+.smooth-hand-art .finger-number.selected circle{fill:#914b60}
+.smooth-hand-art .finger-number.selected text{fill:#fff8f5}
+.practice-app .guide-hand-card svg{max-height:180px;overflow:visible}
+.practice-app .both-hand-diagrams{max-width:480px;gap:35px;padding:12px 20px}
+.glove-art .smooth-hand-art .unified-hand{stroke-width:1.5}
+
+.lesson-cards{display:block}.lesson-level{margin:0 0 27px}.level-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff15;padding-bottom:10px}.level-heading h3{margin:8px 0;font:26px Georgia,serif}.level-heading span{color:#c398a6;font-size:12px}.lesson-level>p{color:#a8a2af;font-size:12px;line-height:1.6}.lesson-level .lesson-card{width:100%;margin:9px 0}.lesson-level .lesson-card.locked{opacity:.43;cursor:not-allowed;filter:saturate(.5)}.lesson-card:disabled{cursor:not-allowed}.lesson-card small{letter-spacing:.5px}
+
+/* Floating glass destinations, with tiny pearls and stars behind the glass. */
+.bubble-orbit{position:relative;isolation:isolate;min-width:0;animation:bubble-float var(--float-duration,7s) var(--orbit-delay,0s) ease-in-out infinite}
+.bubble-orbit:nth-child(1){--bubble-tint:215,147,174}.bubble-orbit:nth-child(2){--bubble-tint:164,155,223}.bubble-orbit:nth-child(3){--bubble-tint:128,201,183}.bubble-orbit:nth-child(4){--bubble-tint:219,183,134}
+.bubble-orbit::before{content:'';position:absolute;inset:8%;z-index:-2;border-radius:50%;background:radial-gradient(circle,rgba(var(--bubble-tint),.23),transparent 70%);filter:blur(20px);transition:opacity .45s,scale .45s;opacity:.6}
+.bubble-orbit:has(.home-bubble:is(:hover,:focus-visible,:active))::before{opacity:1;scale:1.25}
+.home-bubbles .home-bubble{position:relative;width:100%;overflow:hidden;z-index:1;background:linear-gradient(140deg,rgba(var(--bubble-tint),.12),#ffffff03 55%,rgba(var(--bubble-tint),.055));border:1px solid rgba(var(--bubble-tint),.3);box-shadow:inset 0 1px 2px #fff2,inset 0 -2px 12px #ffffff04,0 15px 35px #0002;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);transition:background .4s,border-color .4s,box-shadow .4s,transform .4s cubic-bezier(.2,.7,.2,1)}
+.home-bubbles .home-bubble::before{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;background:radial-gradient(circle at var(--glint-x,28%) var(--glint-y,18%),#ffffff1c,transparent 52%);opacity:.5;transition:opacity .4s;pointer-events:none}
+.home-bubbles .home-bubble::after{content:'';position:absolute;width:54%;height:24%;left:14%;top:7%;border-radius:50%;transform:rotate(-30deg);background:linear-gradient(#ffffff18,#ffffff00);pointer-events:none}
+.home-bubbles .home-bubble:is(:hover,:focus-visible,:active){transform:scale(1.035);background:linear-gradient(145deg,#ffffff0b,#ffffff02 65%);border-color:rgba(var(--bubble-tint),.75);box-shadow:inset 0 1px 2px #ffffff60,inset 0 -1px 8px rgba(var(--bubble-tint),.12),0 0 32px rgba(var(--bubble-tint),.15),0 20px 35px #0002;backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px)}
+.home-bubbles .home-bubble:is(:hover,:focus-visible,:active)::before{opacity:1}.home-bubble .bubble-icon{transition:transform .4s,filter .4s}.home-bubble:is(:hover,:focus-visible,:active) .bubble-icon{transform:translateY(-3px);filter:drop-shadow(0 0 10px rgba(var(--bubble-tint),.5))}
+.bubble-sparkles{position:absolute;inset:-12%;z-index:0;pointer-events:none;color:rgb(var(--bubble-tint))}.bubble-sparkles i{position:absolute;left:var(--sx);top:var(--sy);width:var(--size);height:var(--size);animation:sparkle-drift var(--drift) var(--delay) ease-in-out infinite;opacity:.4}.bubble-pearl{border:1px solid currentColor;border-radius:50%;box-shadow:inset 0 1px 3px #ffffff60,0 0 9px rgba(var(--bubble-tint),.2);background:radial-gradient(circle at 30% 25%,#ffffff55,transparent 55%)}.bubble-star{background:currentColor;clip-path:polygon(50% 0,61% 38%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 38%)}
+.bubble-orbit:has(.home-bubble:is(:hover,:focus-visible,:active)) .bubble-sparkles i{filter:drop-shadow(0 0 4px currentColor)}
+@keyframes bubble-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+@keyframes sparkle-drift{0%,100%{transform:translateY(5px) scale(.8);opacity:.22}50%{transform:translateY(-8px) scale(1.12);opacity:.7}}
+[data-theme=light] .home-bubbles .home-bubble{background:linear-gradient(140deg,#ffffff95,rgba(var(--bubble-tint),.12));border-color:rgba(var(--bubble-tint),.6);box-shadow:inset 0 1px 2px #fff,0 15px 30px #7452550c}[data-theme=light] .home-bubbles .home-bubble:is(:hover,:focus-visible,:active){background:#ffffff40;border-color:rgb(var(--bubble-tint));box-shadow:inset 0 1px 2px #fff,0 0 25px rgba(var(--bubble-tint),.2)}[data-theme=light] .bubble-sparkles{filter:saturate(1.4)}
+@media(prefers-reduced-motion:reduce){.bubble-orbit,.bubble-sparkles i{animation:none!important}.home-bubbles .home-bubble,.home-bubble .bubble-icon,.bubble-orbit::before{transition:none!important}.home-bubbles .home-bubble:is(:hover,:focus-visible,:active),.home-bubble:is(:hover,:focus-visible,:active) .bubble-icon{transform:none}}
+#animationToggle,#backgroundToggle{min-width:115px}#animationToggle[aria-checked=false],#backgroundToggle[aria-checked=false]{background:#292833;color:#b2a4af;border-color:#51454e}.background-volume{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;margin:0 0 24px}.background-volume input{accent-color:#b77b90;max-width:55%}.home-music{width:min(360px,100%);margin:28px auto 0;text-align:left;border:1px solid #ffffff17;border-radius:12px;overflow:hidden;background:#161922}.home-music[hidden]{display:none}.home-music-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px}.home-music-heading small{display:block;font-size:8px;letter-spacing:1.5px;color:#a28c9b;margin-bottom:6px}.home-music-heading a{font-size:11px;color:#c7afba;text-decoration:none}.home-music-heading>span{font-size:9px;color:#a49aa9}.home-music iframe{display:block;width:100%;height:203px;border:0}[data-theme=light] .home-music{background:#f9f2ee;border-color:#dacbc7}[data-theme=light] .home-music-heading a{color:#765c67}
+.background-volume{padding:10px 0}.background-volume>span{display:flex;gap:12px;align-items:center}.background-volume output{display:inline-block;min-width:36px;font-variant-numeric:tabular-nums;color:#d4a8b7}.background-volume input{width:55%;height:24px;cursor:pointer}
+#pianoPortal{position:fixed;inset:0;z-index:1000;overflow:hidden;background:#0b0d13;pointer-events:auto}#pianoPortal[hidden]{display:none}#pianoPortal svg{width:100%;height:100%;transform-origin:50% 44%;will-change:transform,opacity}.zooming svg{animation:enter-piano 1.35s cubic-bezier(.35,.05,.2,1) both}.menu-entering #homeScreen{animation:menu-reveal 1.35s ease-out both}
+@keyframes enter-piano{0%{transform:scale(1);opacity:1;filter:blur(0)}45%{opacity:1}80%{opacity:.7}100%{transform:scale(4.8);opacity:0;filter:blur(3px)}}
+@keyframes menu-reveal{0%,50%{opacity:0;transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){#pianoPortal{display:none!important}.menu-entering #homeScreen{animation:none!important}}
+
+.background-actions{display:flex;gap:8px;padding:0 13px 12px}.background-actions button{flex:1;background:#322531;color:#ead1dc;border:1px solid #68505e;border-radius:18px;padding:8px 10px;font-size:11px}.background-actions button:last-child{background:transparent;color:#b9a6b1;border-color:#4c3b49}[data-theme=light] .background-actions button{background:#f0e0e5;color:#745364}[data-theme=light] .background-actions button:last-child{background:transparent;color:#745364}
+
+/* An understated now-playing caption, replacing the video card. */
+#homeMusic{display:flex;align-items:center;justify-content:center;gap:9px;width:auto;max-width:100%;margin:22px auto 0;padding:6px 0;background:transparent;border:0;border-radius:0;overflow:visible;color:#9b8e9c}
+#homeMusic[hidden]{display:none}.music-caption{font-size:10px;font-weight:400;letter-spacing:.1px}.music-version{opacity:.7;font-size:9px}#backgroundPause{display:inline-grid;place-items:center;width:26px;height:26px;padding:0;border:1px solid #ffffff20;border-radius:50%;color:#c8acba;background:transparent;font-size:10px;cursor:pointer}#backgroundPause:hover{border-color:#b98b9e;background:#ffffff08}.music-sr-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}[data-theme=light] #homeMusic{background:transparent;color:#8a7280}[data-theme=light] #backgroundPause{color:#865d72;border-color:#cdb8c1}#backgroundPauseSettings{font-size:11px;margin-bottom:8px}
+.home-view .home-footer{display:none}#homeMusic{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);margin:0;z-index:10;white-space:nowrap}.home-view #homeScreen{padding-bottom:75px}
+
+/* Slow two-stage camera move: front approach, then over the keys into the strings. */
+#pianoPortal .portal-front,#pianoPortal .portal-interior{position:absolute;inset:0;overflow:hidden}
+#pianoPortal .portal-front{z-index:2}#pianoPortal .portal-interior{z-index:1}
+#pianoPortal .portal-front svg{transform-origin:50% 61%}#pianoPortal .portal-interior svg{transform-origin:50% 42%}
+.zooming .portal-front svg{animation:piano-front-approach 6.2s cubic-bezier(.4,0,.25,1) both}
+.zooming .portal-interior svg{animation:piano-enter-strings 6.2s cubic-bezier(.4,0,.25,1) both}
+#pianoPortal.zooming{animation:piano-portal-fade 6.2s linear both}
+.menu-entering #homeScreen{animation:cinematic-menu-reveal 6.2s ease-out both}
+@keyframes piano-front-approach{0%{opacity:0;transform:scale(1);filter:blur(0)}9%{opacity:1;transform:scale(1.01)}38%{opacity:1;transform:scale(1.28)}58%{opacity:0;transform:scale(2.1);filter:blur(1px)}100%{opacity:0;transform:scale(2.1)}}
+@keyframes piano-enter-strings{0%,34%{opacity:0;transform:scale(.78) translateY(4%);filter:blur(0)}54%{opacity:1;transform:scale(1) translateY(0)}82%{opacity:1;transform:scale(1.75)}100%{opacity:0;transform:scale(2.8);filter:blur(2px)}}
+@keyframes piano-portal-fade{0%,80%{opacity:1}100%{opacity:0}}
+@keyframes cinematic-menu-reveal{0%,79%{opacity:0;transform:scale(.97)}100%{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){#pianoPortal{display:none!important}.menu-entering #homeScreen{animation:none!important}}
+
+/* Minimal fall-through intro, with no captions or song information. */
+#openingScene .opening-kicker,#openingScene .opening-footer{display:none!important}
+#openingScene .opening-shell{padding:0;justify-content:center}
+#openingScene #openingArt{width:min(980px,100vw)}
+#openingScene .falling-piano{animation:none!important;transform-origin:443px 300px;will-change:transform}
+#openingScene .music-float,#openingScene .impact-ring,#openingArt svg>ellipse,#openingArt svg>path{display:none!important}
+#openingScene{background:radial-gradient(ellipse at 50% 50%,#1e1b25,#090b10 75%)}
+
+.glass-cracks{opacity:0;stroke-dasharray:700;stroke-dashoffset:700}.glass-hit .glass-cracks{opacity:.85;animation:glass-fracture .7s ease-out forwards}.piano-impact{opacity:0}.glass-debris .glass-shard,.piano-debris .piano-fragment{opacity:0;will-change:transform}.glass-platform{transition:opacity .1s linear}
+@keyframes glass-fracture{from{stroke-dashoffset:700}to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.glass-hit .glass-cracks{animation:none!important;stroke-dashoffset:0}}
+.coach-setup{margin:10px 0 16px}.coach-setup summary{cursor:pointer;font-size:11px;color:#ae9eae}.simple-lesson-controls{display:none}
+/* Lessons present one task: watch the keys and hand, then play. */
+.lesson-focus:not(.home-view) main{max-width:1080px;padding-top:12px}
+.lesson-focus:not(.home-view) #appLibrary{display:none}
+.lesson-focus .studio{display:flex;flex-direction:column}
+.lesson-focus #lessonPanel{order:0;background:transparent!important;border:0!important;padding:4px 0 8px!important;margin:0!important}
+.lesson-focus .active-lesson-top{margin:0}.lesson-focus #lessonHeading{font-size:27px;margin:9px 0}
+.lesson-focus :is(#lessonDescription,.lesson-goal,.lesson-actions,#lessonResult,#lessonPanel>small,.studio-head,.tabs,#draftBanner,.transport,.practice-drawer,.lesson,.hand-top,.hand-detail,.hand-steps,.roll-head,.key-hint){display:none!important}
+.lesson-focus #learnView{order:1;padding:10px!important;border:1px solid #343442;background:#0b1018;border-radius:16px}
+.lesson-focus #learnView .roll{height:150px!important}.lesson-focus .keyboard-stage{height:112px!important}
+.lesson-focus .hand-guide{order:2;background:transparent!important;border:0!important;margin:0!important;padding:0!important}
+.lesson-focus .hand-body{display:block!important;padding:6px 0!important}.lesson-focus .both-hand-diagrams{padding:5px 15px;gap:20px;max-width:360px}.lesson-focus .guide-hand-card svg{height:115px;max-height:115px}.lesson-focus .guide-hand-card small{font-size:9px}
+.lesson-focus #coach{order:3;background:transparent!important;border:0!important;padding:6px 0!important;margin:0!important;text-align:center;display:flex;flex-direction:column}
+.lesson-focus .coach-top{justify-content:center;font-size:10px;gap:20px;order:0}.lesson-focus #coachState{display:none}
+.lesson-focus .coach-actions{justify-content:center;order:1;margin:12px 0 0;gap:9px}.lesson-focus .coach-actions button{min-width:105px;font-size:12px!important;padding:11px 16px!important;border-radius:24px!important}
+.lesson-focus #coachWatch{font-size:0!important}.lesson-focus #coachWatch::after{content:'▶ Watch';font-size:12px}
+.lesson-focus #coachTry{font-size:0!important}.lesson-focus #coachTry::after{content:'♪ Try it';font-size:12px}
+.lesson-focus #coachRewind{font-size:0!important;min-width:45px}.lesson-focus #coachRewind::after{content:'↶ Replay';font-size:12px}
+.lesson-focus #coachMessage{order:2;font-size:12px;line-height:1.5;margin:12px 0 7px;min-height:18px;color:#bcb1c2}
+.lesson-focus #coachProgress{order:3;width:min(340px,90%);align-self:center;height:3px;margin:3px 0 10px}
+.lesson-focus .coach-nav{display:none}.lesson-focus .coach-setup{order:4;margin:10px auto 0;text-align:left;max-width:500px}.lesson-focus .coach-setup .coach-options>label:first-child{display:none}.lesson-focus .coach-note{font-size:10px;max-width:450px}
+.lesson-focus .simple-lesson-controls{display:block;order:4;text-align:center;padding:3px 0 18px}.lesson-focus #simpleContinue{border:1px solid #755160;background:#49323e;color:#f0dbe4;border-radius:25px;padding:11px 25px;font-size:12px}.lesson-focus #simpleContinue:disabled{display:none}
+@media(max-width:600px){.lesson-focus:not(.home-view) main{padding:10px}.lesson-focus #learnView .roll{height:130px!important}.lesson-focus #lessonHeading{font-size:23px}.lesson-focus .guide-hand-card svg{height:100px;max-height:100px}.lesson-focus .coach-actions button{min-width:85px;padding:10px 12px!important}}
+
+.lessons-dialog .lesson-level{margin-bottom:12px}.lessons-dialog .level-heading{cursor:pointer;list-style:none;border:1px solid #443847;border-radius:12px;padding:8px 15px}.lessons-dialog .level-heading::-webkit-details-marker{display:none}.lessons-dialog .level-heading h3{font-size:22px}.lessons-dialog .lesson-level>p{display:none}.lessons-dialog .lesson-card{padding:13px 15px}.lessons-dialog .lesson-card>span:nth-child(2)>span{display:none}.lessons-dialog .lesson-card small{font-size:8px}.lessons-dialog .lesson-card strong{font-size:14px}.lessons-dialog .lessons-intro{font-size:12px;line-height:1.6}
+
+/* The title takes the same impact as the piano, then hangs a little crooked. */
+#openingScene .opening-brand{display:block!important;position:absolute;top:clamp(72px,13vh,140px);left:0;right:0;text-align:center;z-index:2;pointer-events:none;color:#f3eae5;font:52px/1 Georgia,serif;letter-spacing:-2px}
+.intro-logo-lockup{display:inline-flex;align-items:center;gap:14px;transform-origin:50% 72%;will-change:transform}
+.intro-mark{display:grid;place-items:center;width:46px;height:51px;border-radius:12px;background:#bd7782;color:#211c23;font:43px/1 Georgia,serif;box-shadow:0 5px 22px #0003;letter-spacing:0}
+#openingScene.glass-hit .intro-logo-lockup{animation:logo-landing 1.25s both}
+@keyframes logo-landing{0%{transform:translateY(0) rotate(0)}10%{transform:translateY(8px) rotate(-3deg) scale(1.04,.94)}27%{transform:translateY(-24px) rotate(7deg) scale(.98,1.02)}43%{transform:translateY(3px) rotate(-9deg)}61%{transform:translateY(-9px) rotate(-1deg)}78%{transform:translateY(1px) rotate(-6deg)}100%{transform:translateY(0) rotate(-5deg)}}
+@media(max-width:600px){#openingScene .opening-brand{font-size:42px;top:18vh}.intro-mark{width:38px;height:43px;font-size:36px}}
+@media(prefers-reduced-motion:reduce){#openingScene.glass-hit .intro-logo-lockup{animation:none!important;transform:rotate(-5deg)}}
+
+/* One compact, synchronized hand-on-keys demonstration. */
+.practice-app .both-hand-diagrams{max-width:650px;gap:20px}
+.practice-app .guide-hand-card small{display:block;min-height:22px;line-height:1.5;color:#c896a0;text-align:center;font-size:11px}
+.practice-app .guide-hand-card svg.teaching-hand{height:215px;max-height:215px;width:100%;overflow:visible}
+.lesson-focus .both-hand-diagrams{max-width:580px;padding:0 10px;gap:16px}
+.lesson-focus .guide-hand-card svg.teaching-hand{height:185px;max-height:185px}
+.teaching-hand .finger-detail{transition:transform .1s ease-out}
+.teaching-hand .finger-number.selected circle{fill:#a94e65!important;stroke:#fff!important;stroke-width:2}
+.teaching-hand .finger-number.selected text{fill:#fff!important}
+.teaching-hand .unified-hand{fill-opacity:.93;stroke-width:1.5}
+[data-theme=light] .guide-hand-card small{color:#914c60}
+@media(max-width:600px){.lesson-focus .guide-hand-card svg.teaching-hand{height:155px;max-height:155px}.practice-app .guide-hand-card small{font-size:9px}.lesson-focus .both-hand-diagrams{gap:8px}}
+@media(prefers-reduced-motion:reduce){.teaching-hand .finger-detail{transition:none}}
+
+/* Teach directly on the playable keyboard, with no second hand panel. */
+.practice-app .hand-guide{display:none!important}
+.practice-app #keyboardStage{position:relative;overflow:visible}
+.practice-app #keyboardStage :is(#movingHand,#movingLeftHand){display:block!important;position:absolute;top:4px;bottom:0;height:auto;margin:0;z-index:5;opacity:.88;pointer-events:none;transform:none}
+.practice-app #keyboardStage :is(#movingHand,#movingLeftHand)[hidden]{display:none!important}
+.practice-app #keyboardStage .moving-hand svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 3px 3px #0004)}
+.practice-app .keyboard-hand-label{position:absolute;bottom:2px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:3px 7px;border-radius:8px;background:#25212bef;color:#fff1f1;font:600 10px/1.2 'DM Sans',sans-serif;letter-spacing:.1px}
+.practice-app #keyboardStage.no-hand :is(#movingHand,#movingLeftHand){display:none!important}
+.practice-app #keyboardStage .unified-hand{fill-opacity:.85}
+.practice-app #keyboardStage .finger-number.selected circle{fill:#a94e65!important;stroke:white!important;stroke-width:2}
+.practice-app #keyboardStage .finger-number.selected text{fill:white!important}
+@media(max-width:600px){.practice-app .keyboard-hand-label{font-size:8px;padding:2px 4px}}
+.practice-app #keyboardStage :is(#movingHand,#movingLeftHand){height:calc(100% - 4px)!important;aspect-ratio:auto!important;min-height:0}
+.practice-app #keyboardStage .moving-hand svg{height:100%!important;aspect-ratio:auto!important}
+
+/* Keyline home and lesson refresh from the editable Figma layouts. */
+[data-theme=dark] body.home-view {
+  background: radial-gradient(ellipse at 50% 24%, #211a25, #101016 65%);
+  color: #f5ece7;
+}
+
+#homeScreen { padding-top: clamp(36px, 8vh, 78px); }
+#homeScreen h1 { font-size: clamp(46px, 7vw, 76px); }
+#homeScreen .home-subtitle { margin-top: 0; }
+.home-bubbles { max-width: 1000px; margin-inline: auto; }
+
+[data-theme=dark] .home-bubbles .home-bubble {
+  background: radial-gradient(circle at 32% 20%, #ffffff14, transparent 60%), var(--home-card);
+  border-color: #62505e;
+}
+[data-theme=dark] .lessons-bubble { --home-card: #362530; }
+[data-theme=dark] .locker-bubble { --home-card: #292637; }
+[data-theme=dark] .import-bubble { --home-card: #222e32; }
+[data-theme=dark] .settings-bubble { --home-card: #332b36; }
+[data-theme=dark] #homeContinue { background: #663f52; color: #fff0ee; border-color: #8b5d71; }
+[data-theme=dark] .home-bubble small { color: #c9bdc8; }
+
+.lesson-focus #lessonHeading { font-size: clamp(32px, 5vw, 46px); }
+.lesson-focus #learnView { border-radius: 16px; }
+[data-theme=dark] .lesson-focus #coachWatch { background: #8b4e63; }
+[data-theme=dark] .lesson-focus #coachTry { background: #345e54; }
+[data-theme=dark] .lesson-focus #coachRewind { background: #302a39; }
+.lesson-focus #coach .coach-actions button { min-height: 44px; }
+.lesson-focus .keyboard-hand-label { font-size: 11px; }
+
+#openingScene { background: radial-gradient(ellipse at 50% 45%, #2e202d, #14141d 56%, #090b10 85%); }
+
+#homeMusic {
+  position: static;
+  transform: none;
+  margin: 18px auto 0;
+  white-space: normal;
+}
+.home-view #homeScreen { padding-bottom: 28px; }
+@media (max-width: 800px) {
+  .home-bubbles { max-width: 420px; gap: 16px; }
+  #homeScreen .home-subtitle { margin-bottom: 24px; }
+}
+
+/* Shape and light are separate from finger feedback so glove patterns still work. */
+.practice-app #keyboardStage .moving-hand { filter: none; }
+.practice-app #keyboardStage .moving-hand svg {
+  filter: drop-shadow(0 2px 1px #130d17a6);
+}
+.practice-app #keyboardStage .unified-hand {
+  fill-opacity: .96;
+  stroke: #885d55;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+.practice-app #keyboardStage .finger-number.selected circle {
+  fill: #7f2949 !important;
+  stroke-width: 2.25;
+}
+.practice-app #keyboardStage .finger-number text { font-weight: 700; }
+[data-skin]:not([data-skin="classic"]) .hand-joint-detail { opacity: .35; }
+
+#coach .coach-tempo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+#coach .coach-tempo select { min-height: 44px; }
+
+.rigged-hand { display: none; position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.has-rig .rigged-hand { display: block; }
+.has-rig .teaching-hand { position: relative; }
+.has-rig .unified-hand, .has-rig .hand-joint-detail { visibility: hidden; }
+
+/* Import is a single screen. Playback appears once a draft or example is ready. */
+.practice-app.show-library .studio { display: none; }
+.practice-app.show-library #importPanel {
+  display: block; max-width: 550px; margin: 5vh auto 24px; padding: clamp(20px,5vw,36px);
+  border-radius: 24px; text-align: center; background: var(--app-panel);
+}
+[data-theme=light] .practice-app.show-library #importPanel { background: #fcf6f1; }
+#importPanel h2 { margin: 0 0 22px; font-size: clamp(34px,6vw,48px); }
+#importPanel .drop {
+  min-height: 98px; padding: 18px; border-radius: 15px; border: 1px solid #a0687e;
+  color: #fff5f2; background: #754557; cursor: pointer; gap: 8px;
+}
+#importPanel .drop:is(:hover,:focus-visible,.drag) { background: #8a5368; }
+#importPanel .drop strong { font-size: 17px; color: inherit; }
+#importPanel .drop span { color: inherit; opacity: .82; font-size: 12px; }
+.import-formats { margin: 10px 0 21px; font-size: 12px; opacity: .85; }
+.import-actions, .import-choice, #importExamples { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+#importChoices[hidden], #importExamples[hidden], #importPanel select[hidden] { display: none; }
+#importChoices, #importExamples { margin-top: 18px; }
+.import-choice { align-items: center; margin: 9px 0; }
+.import-choice span { flex-basis: 100%; font-size: 12px; }
+#importPanel button:not(#cancelConversion):not(#stoprecord) {
+  padding: 8px 13px; min-height: 43px; border: 1px solid var(--line); border-radius: 10px;
+  color: inherit; background: transparent; font-size: 13px;
+}
+#importPanel button:is([aria-expanded=true],[aria-pressed=true]) { background: #754557 !important; color: #fff5f2 !important; }
+#importPanel #status { margin: 14px 0 0; }
+#importPanel #status:empty { display: none; }
+#importPanel .conversion:not([hidden]) ~ #status { display: none; }
+
+#gloveLocker { width: min(820px, 94vw); padding: clamp(18px,4vw,30px); border-radius: 22px; }
+#gloveLocker .locker-heading h2 { margin: 0 0 12px; font-size: 38px; }
+#gloveLocker .glove-grid { gap: 12px; }
+#gloveLocker .glove-card { text-align: left; width: 100%; padding: 10px; border-radius: 14px; color: inherit; cursor: pointer; }
+#gloveLocker .glove-card:is(:hover,:focus-visible,.equipped) { border-color: #b47589; }
+#gloveLocker .glove-art { display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; height: 116px; border-radius: 9px; margin-bottom: 8px; }
+#gloveLocker .glove-render { width: 100%; height: 100%; min-height: 0; object-fit: contain; filter: hue-rotate(var(--glove-hue)); }
+#gloveLocker .glove-card strong { display: block; font-size: 13px; margin: 4px 0; color: inherit; }
+#gloveLocker .glove-state { font-size: 11px; opacity: .85; }
+#gloveLocker #lockerHandPreview { position: static; width: 126px; height: 126px; }
+#gloveLocker #equipPreview { padding: 8px 16px; border-radius: 9px; border: 1px solid #ab7387; background: #754557; color: #fff5f2; }
+#gloveLocker #equipPreview:disabled { cursor: default; }
+#gloveLocker .locker-note { padding: 0; background: none; }
+#gloveLocker .locker-note p:empty, #lockerStorage:empty, #lockerPreviewNote:empty { display: none; }
+@media (max-width: 520px) { #gloveLocker .glove-art { height: 95px; } }
+
+#openingScene.upright-intro { background: #191610; }
+#openingScene .upright-film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+#openingScene.upright-intro .opening-brand {
+  top: 84px; left: 24px; right: auto; margin: 0; font-size: clamp(29px, 4vw, 44px);
+  text-shadow: 0 2px 16px #000, 0 2px 5px #0009;
+}
+#openingScene #skipIntro { z-index: 3; }
+#openingScene.upright-intro #skipIntro { background: #191610db; color: #fff4e8; }
+@media (orientation: portrait) {
+  #openingScene.upright-intro .opening-brand {
+    top: max(74px, calc(env(safe-area-inset-top) + 64px));
+    left: 0;
+    right: 0;
+  }
+}
+
+#gloveLocker .glove-art > .glove-swatch,
+#gloveLocker #lockerHandPreview > .glove-swatch {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: none;
+}
+#gloveLocker .glove-swatch svg { position: absolute; inset: 9%; width: 82%; height: 82%; }
+#gloveLocker .glove-swatch .glove-render { opacity: 0; }
+#gloveLocker .glove-swatch.image-ready svg { visibility: hidden; }
+#gloveLocker .glove-swatch.image-ready .glove-render { opacity: 1; }

@@ -1,0 +1,15 @@
+b8d4e16d4c9ab8cb1587b4b44a1385f4fe43277b 2026-11-19T13:10:35-05:00 Show glove patterns immediately while previews load
+1c3a1e0cc21777f12460e278a5035d84b63d5198 2026-11-19T13:06:13-05:00 Repair left hand curls and keep glove previews visible
+410d81b2955f2a42d12d1c062563e39686f4bdd6 2026-11-19T12:58:56-05:00 Start the Keyline intro automatically at 1.2x
+9cd500be7c795744fe9a8240e37b9beee1c986bd 2026-11-12T19:24:23-05:00 Render the intro in Full HD for landscape and portrait
+e8b9b643c2d5411541f84842fd94b255ef9c4292 2026-11-12T19:13:43-05:00 Wait for audible playback when the intro is blocked
+58e6d017d50e75473c7ffb5638ab71b1b99569d4 2026-11-12T19:10:22-05:00 Sync three breaking shelves to the upright intro chords
+56f1716be9b0b37126aa1e439239776925f8c54e 2026-11-12T18:52:18-05:00 Expand the upright intro with bouncing balls and more notes
+232504e930dc48753d47847ae033599232d28528 2026-11-12T18:42:01-05:00 Open Keyline with an upright piano and falling tools
+47f2a46ace0115a51562ec0a9aca812f3768121f 2026-11-12T18:11:13-05:00 Refine the pianist and render the intro in HD
+f10b49c59d940cce35e4468bd2730758533f31ee 2026-11-12T17:52:23-05:00 Add a rigged Blender pianist cutscene
+561ab1b36d85f6e255ee1fb4dee650c6499da487 2026-11-12T17:44:02-05:00 Simplify music import and add Blender glove skins
+e69796ba4620106094b5837ddc8f4dfec322b58a 2026-11-12T17:35:21-05:00 Load separate left and right piano hand rigs
+74cea21c9eaa653c1d0288547e222525d4774bdd 2026-11-12T17:31:54-05:00 Use Blender hand rig in piano playthroughs
+d45419c6757f9df12ddf5bb54bd4f02e67f11b77 2026-11-10T18:14:36-05:00 Organize Keyline Obsidian project notes
+fcb92cefaf97e4c1003a1a112f8c9404385d49b7 2026-11-10T17:58:21-05:00 Import Keyline and its Obsidian vault

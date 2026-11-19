@@ -11,6 +11,7 @@ The game is hosted separately from GitHub and currently has private access. Open
 | 1 — Iterate, Then Compare | [Decision note](Project%201/decision-note.md) | Context kit, four image rounds, final poster, and the keep/reject decision. |
 | 2 — Document to study guide | [Start here](Project%202/00-start-here.md) | The five-step workflow and a source-based guide. |
 | 3 — Extend and Encode | [Project 3 overview](project-03/README.md) | The input-rule audit, proposed agent, controlled trials, and limits. |
+| 4 — Keyline | [Project 4 overview](Project%204/AI101_P4_Krug_Dakota/START-HERE.md) | Runnable piano app, reconstructed decisions, home feedback, replay evidence and remaining review items. |
 
 ## Project 3 status
 

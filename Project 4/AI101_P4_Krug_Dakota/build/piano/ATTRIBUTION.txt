@@ -1,0 +1,9 @@
+Steinway & Sons Model B piano recordings from the University of Iowa Musical Instrument Samples.
+Performed by Evan Mazunik; recordings November 5 & 27, 2001; technician Michael Cash.
+Created by Lawrence Fritts / University of Iowa Electronic Music Studios.
+Instrument details and source files: https://theremin.music.uiowa.edu/MISPiano.html
+Usage statement: https://theremin.music.uiowa.edu/MIS.html
+The collection states these recordings may be downloaded and used for any projects, without restrictions.
+
+Keyline's compact sample set uses 22 mezzo-forte recordings, converted from stereo 44.1 kHz AIFF to mono 22.05 kHz PCM WAV, with leading silence trimmed, gain adjusted and an eight-second maximum length with an end fade. Intermediate pitches are produced by playback-rate interpolation. A single recorded dynamic layer is used; velocity controls amplitude and filtering. This is not a complete multi-layer Steinway instrument library. No endorsement by Steinway & Sons is claimed.
+The manifest records each source URL.

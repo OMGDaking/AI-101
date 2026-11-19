@@ -1,0 +1,84 @@
+/* Midnight studio. Keep the score on paper and the keys ivory. */
+:root[data-theme=dark]{color-scheme:dark;--bg:#0c0e13;--ink:#ece8e3;--muted:#a6a4ad;--line:#30313b;--accent:#d79a9e}
+[data-theme=dark] body{background:#0c0e13;color:#ece8e3}
+[data-theme=dark] header{border-color:#30313b}[data-theme=dark] .brand{color:#f1ece7}[data-theme=dark] .mark{background:#bc737d;color:#17151a}
+[data-theme=dark] :is(h1,h2,h3,strong,.studio-head h2,.workspace h2,.hand-top h3){color:#f0eae5}
+[data-theme=dark] :is(p,small,label,.sub,.muted,.tip,.hand-explain,.hand-footnote,.finger-name,#handPosition,.hand-steps span,.private,.tabs button,.key-hint,.section-label,.eyebrow,.sample p,.sample strong,#status,.studio-head p,.lesson p,.lesson strong,.speed,.timeline>div,footer,.lessons-intro,.locker-stats,.equipped-line,.practice-rules){color:#adaab5}
+[data-theme=dark] :is(.workspace,.studio,.hand-guide,.studio-paths button,.play-invitation,.practice-drawer,.active-lesson,.sheet-study,dialog,.lesson,.glove-card,.locker-preview,.locker-note){background:#161922;border-color:#303440;color:#ece7e3;box-shadow:none}
+[data-theme=dark] :is(aside,.drop,.record,.arrange-options select,.piano-sound select,.practice-input select,.speed select,.lesson-actions button,.lesson-card,.glove-card button){background:#11141c;border-color:#343945;color:#e0d8d3}
+[data-theme=dark] :is(.hand-top,.hand-steps,.hand-detail,.tabs,.sample,.piano-sound,.drawer-content,.glove-card,.lesson-card,.studio-paths button){border-color:#303440}
+[data-theme=dark] :is(.quiet,.export,.hand-steps button,.sample button,.locker-open,.motion-toggle){color:#d9b4b6;border-color:#4a3942}
+[data-theme=dark] :is(.studio-paths button[aria-pressed=true],.hand-toggle button[aria-pressed=true],#timeToPlay,.play){background:#a55d6b;color:white;border-color:#c17b86}
+[data-theme=dark] .studio-paths button strong{color:#eee8e3}[data-theme=dark] .studio-paths button small{color:#aaa5b1}
+[data-theme=dark] .draft-banner{background:#211e28;color:#bcb3c2;border-color:#3d3442}[data-theme=dark] a{color:#dab1b9}
+[data-theme=dark] .score{background:#fff;color:#181818}[data-theme=dark] .source-score-link{background:#eae4de;color:#503f39}
+[data-theme=dark] .glove-art{background:radial-gradient(#33303a,#191b24)}[data-theme=dark] .glove-card.equipped{background:#2b222e;border-color:#bd7a88}
+[data-theme=dark] .sample-art{background:#2e2430;color:#d798a6}[data-theme=dark] .finger-badge{background:#36232c;color:#ecc2c6}
+#themeToggle,#replayIntro{font-size:11px;white-space:nowrap}.header-actions{display:flex;align-items:center;gap:8px}
+/* Tutorial view: continuous note lanes, long notes and a luminous strike line. */
+#learnView{background:#090e14;border:1px solid #303a47;border-radius:12px;padding:18px 14px 10px;overflow:hidden}
+#learnView .roll-head,#learnView .key-hint{color:#a3aebc}#learnView .legend{color:#c0cbd2}#learnView .legend i{background:#b6df72;box-shadow:0 0 8px #b6df7270}
+#learnView .roll{height:280px;background:repeating-linear-gradient(to right,transparent 0,transparent calc(100% / var(--white-keys,22) - 1px),#ffffff08 calc(100% / var(--white-keys,22) - 1px),#ffffff08 calc(100% / var(--white-keys,22))),linear-gradient(#070c13,#15242d);border-radius:4px 4px 0 0}
+#learnView .note{background:linear-gradient(90deg,#94bb53,#c2e879);border:1px solid #c5e897;color:#192911;border-radius:3px;box-shadow:0 0 9px #b4e47335;font-weight:700;font-size:9px}
+#learnView .note.bass-note{background:linear-gradient(90deg,#4779bd,#91c5f4);border-color:#a4cdf3;color:#10233e;box-shadow:0 0 9px #81baff40}
+#learnView .playline{background:#e3eaf0;box-shadow:0 0 12px #e7f0ff;height:2px;z-index:2}#learnView .roll-empty{color:#a6b8c5;background:transparent}
+#learnView .keyboard-stage{background:linear-gradient(#0b111a,#10151e);border-radius:0 0 5px 5px}#learnView .keyboard{border-top:3px solid #8f4957}
+#learnView .key.active{background:linear-gradient(#b7da7f,#e2f3c2);box-shadow:inset 0 3px 8px #dbff9e,0 -5px 15px #d2ff8160}
+#learnView .key.bass-active{background:linear-gradient(#79a9dc,#c4dff7);box-shadow:inset 0 3px 8px #c9e8ff,0 -5px 15px #7bb9ff70}
+#learnView .key.black.active{background:#6a963d}#learnView .key.black.bass-active{background:#416f9e}#learnView .key.black span,#learnView .key.black small{color:#fff}
+#learnView .motion-caption{color:#c4ccd6}#learnView .motion-toggle{background:#242732;color:#dbb8bd;border-color:#49404c}#learnView .moving-hand{opacity:.7}
+#openingScene{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;padding:0;margin:0;border:0;background:radial-gradient(ellipse at 50% 55%,#24202b,#090b10 67%);color:#f5eae5;overflow:hidden}
+#openingScene::backdrop{background:#090b10}.opening-shell{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}.opening-brand{font:42px 'Instrument Serif',Georgia,serif;letter-spacing:-1px;margin:0}.opening-kicker{color:#b8929b;letter-spacing:5px;font-size:10px;margin:12px 0 0}#openingArt{width:min(820px,96vw)}#openingArt svg{width:100%;overflow:visible}.opening-footer{text-align:center;color:#a59eac;font-size:13px;letter-spacing:.5px}.opening-footer strong{display:block;font:27px Georgia,serif;color:#eee2df;margin-bottom:10px}#skipIntro{position:absolute;right:28px;top:24px;background:#ffffff08;border:1px solid #ffffff25;border-radius:30px;padding:10px 20px;color:#e4d6dc;cursor:pointer}.opening-progress{margin:22px auto 0;height:2px;width:140px;background:#ffffff10;overflow:hidden}.opening-progress:after{content:'';display:block;width:100%;height:100%;background:#c18794;transform-origin:left}.running .opening-progress:after{animation:progress 6.2s linear both}
+.running .falling-piano{animation:piano-drop 1.45s cubic-bezier(.65,0,.85,.6) both}.running .falling-player{animation:player-drop 1s 1.65s cubic-bezier(.65,0,.8,.7) both}.running .impact-ring{animation:impact .7s 1.1s both}.running .player-breathe{animation:breathe 1.1s 2.8s ease-in-out infinite alternate;transform-origin:240px 290px}.running .playing-arm{animation:play-arm .3s 2.8s ease-in-out infinite alternate;transform-origin:240px 225px}.running .arm-back{animation-delay:2.95s}.running .music-float{animation:music 1.4s 2.8s infinite both}
+@keyframes piano-drop{0%{transform:translateY(-650px) rotate(-8deg);opacity:0}10%{opacity:1}76%{transform:translateY(0) rotate(0)}85%{transform:translateY(-15px) rotate(1deg)}100%{transform:none}}
+@keyframes player-drop{0%{transform:translateY(-650px) rotate(10deg);opacity:0}10%{opacity:1}77%{transform:translateY(0)}87%{transform:translateY(-12px)}100%{transform:none}}
+@keyframes impact{0%{opacity:0;transform:translate(443px,360px) scale(.3) translate(-443px,-360px)}25%{opacity:1}100%{opacity:0;transform:translate(443px,360px) scale(1.8) translate(-443px,-360px)}}
+@keyframes play-arm{to{transform:rotate(-3deg)}}@keyframes breathe{to{transform:rotate(-1deg)}}@keyframes music{0%{opacity:0;transform:translateY(15px)}30%{opacity:.8}100%{opacity:0;transform:translateY(-35px)}}@keyframes progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:760px){header{flex-wrap:wrap;height:auto;min-height:85px;padding:14px 0;gap:8px}.header-actions{flex-wrap:wrap;gap:3px}#learnView{padding:12px 6px 8px}#learnView .roll{height:240px}.opening-brand{font-size:34px}}
+@media(prefers-reduced-motion:reduce){#openingScene *{animation:none!important;transition:none!important}.music-float,.impact-ring{display:none}}
+@media print{#openingScene,#themeToggle,#replayIntro{display:none!important}}
+#learnView .motion-caption{background:#1c2532;border:1px solid #344251;color:#dbe5ef}
+
+/* Reference-inspired character art keeps its alpha and receives only subtle performance motion. */
+.running .anime-player .player-breathe{animation:anime-performance 1.15s 2.8s ease-in-out infinite alternate;transform-origin:334px 265px}
+@keyframes anime-performance{from{transform:rotate(-.35deg)}to{transform:rotate(.35deg)}}
+.running .impact-ring{transform-origin:443px 380px}
+@keyframes impact{0%{opacity:0;transform:scale(.3)}25%{opacity:.7}100%{opacity:0;transform:scale(1.8)}}
+
+/* A loose airborne tumble, then an elastic seated landing. */
+.running .falling-player{transform-origin:266px 302px;animation:player-tumble 1.55s 1.55s linear both}
+@keyframes player-tumble{
+ 0%{opacity:0;transform:translate(-50px,-590px) rotate(-24deg) skewX(-5deg)}
+ 12%{opacity:1;transform:translate(-35px,-475px) rotate(19deg) skewX(3deg)}
+ 30%{transform:translate(30px,-330px) rotate(-16deg) skewX(-4deg)}
+ 47%{transform:translate(-19px,-180px) rotate(12deg) skewX(3deg)}
+ 62%{transform:translate(11px,-65px) rotate(-8deg)}
+ 73%{transform:translate(0,5px) rotate(3deg) scale(1.035,.94)}
+ 81%{transform:translate(-5px,-17px) rotate(-5deg) scale(.98,1.025)}
+ 89%{transform:translate(3px,2px) rotate(2.5deg) scale(1.015,.985)}
+ 95%{transform:translate(-1px,-4px) rotate(-1deg)}
+ 100%{opacity:1;transform:none}
+}
+.running .anime-player .player-breathe{animation:airborne-wiggle .38s 1.55s ease-in-out 4 alternate;transform-origin:270px 245px}
+@keyframes airborne-wiggle{from{transform:skewX(-2.5deg) rotate(-2deg)}to{transform:skewX(2.5deg) rotate(2deg)}}
+.running.landed .anime-player .player-breathe{animation:seated-settle .65s ease-out both;transform-origin:266px 302px}
+@keyframes seated-settle{0%{transform:rotate(-3deg)}45%{transform:rotate(2deg)}75%{transform:rotate(-.8deg)}100%{transform:none}}
+.running.with-music .anime-player .player-breathe{animation:presto-playing .75s ease-in-out infinite;transform-origin:334px 266px}
+@keyframes presto-playing{0%,100%{transform:rotate(-.9deg) skewY(-.2deg)}25%{transform:rotate(.4deg) translateY(.7px)}50%{transform:rotate(1deg) skewY(.25deg)}75%{transform:rotate(-.2deg) translateY(-.5px)}}
+.running .music-float{animation:none;opacity:0}.running.with-music .music-float{animation:music 1.5s infinite both}
+.opening-progress{display:none}.opening-footer p{font-size:12px;color:#bdb0bd;min-height:18px;margin:12px 0}
+.intro-music-controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}.intro-music-controls button{border:1px solid #71525e;background:#2c202b;color:#f5dfe5;border-radius:22px;padding:10px 17px;font-size:12px}.intro-music-controls button:last-child{background:transparent;border-color:#ffffff25;color:#cfbbc4}
+@media(max-height:650px){#openingArt{width:min(640px,80vw)}.opening-brand{font-size:28px}.opening-kicker{margin-top:5px}.opening-footer strong{font-size:21px}}
+@media(prefers-reduced-motion:reduce){#openingScene *{animation:none!important;transition:none!important}}
+
+.running.landed .intro-fingertips{transform-origin:317px 264px;animation:intro-keypress .575s .6s ease-in-out infinite}
+@keyframes intro-keypress{0%,100%{transform:translateY(-.4px) rotate(-1deg)}45%{transform:translateY(.8px) rotate(1.5deg)}70%{transform:translateY(.15px) rotate(.5deg)}}
+.running.landed .anime-player .player-breathe{animation:presto-playing 1.15s .65s ease-in-out infinite;transform-origin:334px 266px}
+.running.with-music .anime-player .player-breathe{animation-duration:1.15s}
+@media(prefers-reduced-motion:reduce){#openingScene *{animation:none!important;transition:none!important}}
+
+/* One continuous animation clock replaces competing character keyframes. */
+.running .falling-player.anime-player,.running .anime-player .player-breathe,.running.landed .intro-fingertips{animation:none!important;will-change:transform;transform-box:view-box}
+.running .falling-player.anime-player{transform-origin:266px 302px}
+.running .anime-player .player-breathe{transform-origin:334px 266px}
+.running.landed .intro-fingertips{transform-origin:317px 264px}

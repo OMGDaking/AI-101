@@ -1,0 +1,134 @@
+[
+  {
+    "midi": 24,
+    "file": "24.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C1.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 29,
+    "file": "29.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F1.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 33,
+    "file": "33.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A1.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 36,
+    "file": "36.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C2.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 41,
+    "file": "41.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F2.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 45,
+    "file": "45.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A2.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 48,
+    "file": "48.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C3.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 53,
+    "file": "53.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F3.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 57,
+    "file": "57.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A3.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 60,
+    "file": "60.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C4.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 65,
+    "file": "65.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F4.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 69,
+    "file": "69.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A4.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 72,
+    "file": "72.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C5.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 77,
+    "file": "77.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F5.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 81,
+    "file": "81.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A5.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 84,
+    "file": "84.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C6.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 89,
+    "file": "89.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F6.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 93,
+    "file": "93.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A6.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 96,
+    "file": "96.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C7.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 101,
+    "file": "101.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.F7.aiff",
+    "seconds": 8.0
+  },
+  {
+    "midi": 105,
+    "file": "105.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.A7.aiff",
+    "seconds": 7.783764172335601
+  },
+  {
+    "midi": 108,
+    "file": "108.wav",
+    "source": "https://theremin.music.uiowa.edu/sound%20files/MIS/Piano_Other/piano/Piano.mf.C8.aiff",
+    "seconds": 8.0
+  }
+]

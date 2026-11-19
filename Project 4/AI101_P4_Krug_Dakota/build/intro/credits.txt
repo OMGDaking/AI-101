@@ -1,0 +1,1 @@
+Classroom package uses a Blender upright room and shelves created with Codex scripts. Piano music is an arrangement of the chord progression visible in Dakota’s supplied screen recording. Original song identity and recording rights are unverified. The original recording and commercial background MP3 are excluded. Piano samples are credited in ../piano/ATTRIBUTION.txt.

@@ -1,0 +1,53 @@
+{
+  "recorded_on": "2026-11-19",
+  "operator": "Codex browser automation",
+  "claim_scope": "Retrospective saved-build comparison, not original scheduled class cycles or acoustic hardware testing",
+  "c1": {
+    "commit": "e8b9b64",
+    "intro": {
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 8.064,
+      "muted_after_click": false,
+      "paused_after_click": false
+    },
+    "phone": {
+      "viewport": [
+        390,
+        844
+      ],
+      "width": 1280,
+      "height": 720,
+      "source": "intro/keyline-upright-shelves.mp4"
+    },
+    "lesson_1": {
+      "after_D4_progress": 0,
+      "after_four_C4_progress": 4
+    },
+    "agent_scope_prompt": "not run"
+  },
+  "c2": {
+    "commit": "9cd500b",
+    "intro": {
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 8.085,
+      "muted_after_click": false,
+      "paused_after_click": false
+    },
+    "phone": {
+      "viewport": [
+        390,
+        844
+      ],
+      "width": 1080,
+      "height": 1920,
+      "source": "intro/intro-portrait.mp4"
+    },
+    "lesson_1": {
+      "after_D4_progress": 0,
+      "after_four_C4_progress": 4
+    },
+    "agent_scope_prompt": "not run"
+  }
+}

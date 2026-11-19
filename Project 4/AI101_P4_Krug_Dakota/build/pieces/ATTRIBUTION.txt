@@ -1,0 +1,22 @@
+Moonlight Sonata, Op. 27 No. 2, Ludwig van Beethoven.
+Edition and MIDI: Stewart Holmes / The Mutopia Project.
+Source: Berners, 1908, edited by A. Winterberger.
+Mutopia-2007/02/11-276.
+https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=276
+Licensed CC BY-SA 2.5: https://creativecommons.org/licenses/by-sa/2.5/
+
+moonlight-first.mid is the unchanged first-movement MIDI from moonlight-mids.zip.
+moonlight-score.pdf is the unchanged A4 score containing all three movements.
+moonlight-first.json is a format conversion of first-movement MIDI note events
+for Keyline playback, also licensed CC BY-SA 2.5. Pitches and timing are retained.
+No original fingering inference or audio transcription is claimed.
+
+Third movement (Presto agitato), same edition and license:
+moonlight-third-original.mid is the unchanged moonlight3.mid from the same archive.
+moonlight-third.mid and moonlight-third.json are Keyline format/tempo adaptations,
+licensed CC BY-SA 2.5. All 4,863 source pitches, tick starts and note lengths are
+retained; playback tempo changes from the MIDI's default 60 to 160 BPM.
+Rhythmic proportions and source MIDI form/repeat handling are retained.
+moonlight-page-08.png through moonlight-page-23.png render the third movement
+from the unchanged full score PDF. The printed edition's fingerings are not
+encoded by the hand animation, which uses suggested positions.
