@@ -1,6 +1,6 @@
 # Source and asset index
 
-Prepared November 19, 2026. The copied app is from private repository OMGDaking/keyline, commit b8d4e16. Files are inventoried with SHA-256 hashes in [asset-inventory.csv](asset-inventory.csv). The original commercial background MP3 and inactive historical intro assets are excluded. The records below describe provenance, not a blanket certification that every rights question is resolved.
+Prepared November 19, 2026. The copied app is from private repository OMGDaking/keyline, commit 74ea2a9. Files are inventoried with SHA-256 hashes in [asset-inventory.csv](asset-inventory.csv). The original commercial background MP3 and inactive historical intro assets are excluded. The records below describe provenance, not a blanket certification that every rights question is resolved.
 
 | Reference or asset group | Origin | Use | Permission / evidence |
 | --- | --- | --- | --- |

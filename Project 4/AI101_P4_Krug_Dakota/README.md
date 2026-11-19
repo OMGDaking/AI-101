@@ -14,7 +14,7 @@ The personal live site is https://keyline-piano-canx20.daking07.chatgpt.site/. I
 
 ## Build provenance
 
-The packaged app is based on private repository `OMGDaking/keyline`, commit `b8d4e16`, November 19, 2026. The November 19 classroom copy removes the user-supplied commercial background MP3 and disables its controls. It also omits inactive earlier intro assets. Learning features and current intro are retained. See [source-index](sources/source-index.md) and `build/SOURCE.md`.
+The packaged app is based on private repository `OMGDaking/keyline`, commit `74ea2a9`, November 19, 2026. The November 19 classroom copy removes the user-supplied commercial background MP3 and disables its controls. It also omits inactive earlier intro assets. Learning features and current intro are retained. See [source-index](sources/source-index.md) and `build/SOURCE.md`.
 
 ## Known limits
 

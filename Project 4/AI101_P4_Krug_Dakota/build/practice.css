@@ -288,3 +288,21 @@
 #gloveLocker .glove-swatch .glove-render { opacity: 0; }
 #gloveLocker .glove-swatch.image-ready svg { visibility: hidden; }
 #gloveLocker .glove-swatch.image-ready .glove-render { opacity: 1; }
+
+.practice-app .guide-hand-card .guide-hand-stage {
+  position: relative;
+  width: min(100%, 230px);
+  margin-inline: auto;
+  aspect-ratio: 300 / 265;
+}
+.practice-app .guide-hand-card .guide-hand-stage > svg,
+.practice-app .guide-hand-card .guide-rig-view > svg.teaching-hand {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+}
+.guide-rig-slot { position: absolute; left: 13.333%; top: 13.208%; width: 73.333%; height: 79.245%; }
+.guide-rig-view { position: relative; width: 100%; height: 100%; }

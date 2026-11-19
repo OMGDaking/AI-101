@@ -65,3 +65,8 @@ This is a later check of Keyline commit `b8d4e16`. The two saved November 12 sna
 The left-hand action now distributes the press through the finger joints. The preview code adds a drawing for a failed image load. Physical-piano recognition remains open.
 
 The hosted images were slow to appear. The final locker paints the patterned drawings immediately and replaces them as the renders load. The published build showed all seven swatches.
+
+
+## Shared hand rigs · November 19
+
+The left rig in the original Blender file still had some right-hand finger joint coordinates. The lesson layout also widened the 3D projection. The repair mirrors the full left skeleton, preserves both hand meshes’ proportions, and moves the wrist toward the played note. Codex checked the five Blender press poses and confirmed that Forest Camo renders with the correct rig in the right-hand lesson, left-hand lesson, and the two-hand Presto agitato example. Build `74ea2a9`.

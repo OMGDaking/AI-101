@@ -23,12 +23,20 @@ bpy.ops.object.select_all(action='DESELECT')
 left.select_set(True)
 bpy.context.view_layer.objects.active = left
 bpy.ops.object.mode_set(mode='EDIT')
+# Connected bones share endpoints, so capture every joint before editing any.
+mirrored = {
+    bone.name: (reflection @ bone.head, reflection @ bone.tail,
+                reflection.to_3x3() @ bone.z_axis, bone.use_connect)
+    for bone in left.data.edit_bones
+}
 for bone in left.data.edit_bones:
-    roll_axis = reflection.to_3x3() @ bone.z_axis
-    head = reflection @ bone.head
-    tail = reflection @ bone.tail
+    bone.use_connect = False
+for bone in left.data.edit_bones:
+    head, tail, roll_axis, _ = mirrored[bone.name]
     bone.head, bone.tail = head, tail
     bone.align_roll(roll_axis)
+for bone in left.data.edit_bones:
+    bone.use_connect = mirrored[bone.name][3]
 bpy.ops.object.mode_set(mode='OBJECT')
 
 meshes = []

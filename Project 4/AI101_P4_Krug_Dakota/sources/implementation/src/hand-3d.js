@@ -8,10 +8,16 @@ import { clone } from 'three/addons/utils/SkeletonUtils.js';
 const digits = ['thumb', 'index', 'middle', 'ring', 'little'];
 const strikes = [9, 89, 101, 113, 125];
 const tipLengths = [.954, .391, .450, .415, .363];
+const markerX = [39, 79, 117, 154, 187];
+const markerY = [117, 66, 44, 62, 89];
 const views = new WeakMap();
 const assets = new Map();
 const textures = new Map();
 const textureLoader = new TextureLoader();
+
+function handSide(container) {
+  return container.dataset.rigSide || (container.id === 'movingLeftHand' ? 'left' : 'right');
+}
 
 function createView(container, asset) {
   const scene = new Scene();
@@ -29,7 +35,7 @@ function createView(container, asset) {
   scene.add(fill);
 
   const hand = clone(asset.scene);
-  const left = container.id === 'movingLeftHand';
+  const left = handSide(container) === 'left';
   scene.add(hand);
   const gloveMeshes = [];
   hand.traverse(mesh => {
@@ -72,6 +78,7 @@ function createView(container, asset) {
   canvas.addEventListener('webglcontextlost', event => {
     event.preventDefault();
     container.classList.remove('has-rig');
+    container.style.removeProperty('translate');
     views.set(container, { failed: true });
   });
   return { scene, camera, fingers, renderer, left, gloveMeshes, width: 0, height: 0 };
@@ -111,32 +118,46 @@ function paint(container, view, pose) {
   if (!width || !height) return;
   if (view.width !== width || view.height !== height) {
     renderer.setSize(width, height, false);
+    // Frame the same Blender geometry without scaling it unevenly.
+    const aspect = width / height;
+    const halfWidth = Math.max(2.5, 2.9 * aspect);
+    const halfHeight = halfWidth / aspect;
+    camera.left = -halfWidth;
+    camera.right = halfWidth;
+    camera.bottom = -halfHeight;
+    camera.top = halfHeight;
+    camera.updateProjectionMatrix();
     view.width = width;
     view.height = height;
   }
 
   dressHand(container, view);
   const svg = container.querySelector('svg');
-  for (const [i, finger] of fingers.entries()) {
+  const direction = left ? -1 : 1;
+  const active = new Set(pose.pressed.map(note => note.finger - 1));
+  const contacts = fingers.map((finger, i) => {
     const target = pose.targets[i];
     const pressure = Math.min(1, Math.abs(target.y) / (target.y < 0 ? 18 : 17));
     for (const joint of finger.joints) joint.bone.quaternion.slerpQuaternions(joint.rest, joint.press, pressure);
     // The original keyboard planner supplies contact coordinates in a 220-unit span.
-    const desiredX = (target.x + [39, 79, 117, 154, 187][i]) / 44 - 2.5;
+    const desiredX = ((target.x + markerX[i]) / 110 - 1) * camera.right * direction;
     const reach = new Vector3(0, 0, target.y < 0 ? -.5 * pressure : 0);
     finger.root.position.copy(finger.origin).add(reach.applyQuaternion(finger.parentRotation));
-    const point = new Vector3(0, tipLengths[i], 0);
-    finger.tip.localToWorld(point.set(0, tipLengths[i], 0));
-    const offset = desiredX - (left ? -point.x : point.x);
-    // Keep the left knuckles close to their anchors during wide reaches.
-    const delta = left ? Math.max(-.32, Math.min(.32, offset)) : offset;
-    finger.root.position.add(new Vector3(left ? -delta : delta, 0, 0).applyQuaternion(finger.parentRotation));
+    const point = finger.tip.localToWorld(new Vector3(0, tipLengths[i], 0));
+    return { finger, point, offset: desiredX - point.x };
+  });
+  // Move the whole hand toward the played keys before allowing small finger reaches.
+  const shift = contacts.reduce((sum, contact, i) => active.has(i) ? sum + contact.offset : sum, 0) / (active.size || 1);
+  container.style.translate = `${shift * width / (2 * camera.right)}px`;
+  for (const [i, { finger, point, offset }] of contacts.entries()) {
+    const delta = active.has(i) ? Math.max(-.32, Math.min(.32, offset - shift)) : 0;
+    finger.root.position.add(new Vector3(delta, 0, 0).applyQuaternion(finger.parentRotation));
     finger.tip.localToWorld(point.set(0, tipLengths[i], 0));
     point.project(camera);
     const x = (left ? 1 - point.x : 1 + point.x) * 110;
     const y = (1 - point.y) * 105;
     const marker = svg.querySelector(`.finger-detail[data-digit="${i}"]`);
-    marker.setAttribute('transform', `translate(${x - [39, 79, 117, 154, 187][i]} ${y - [117, 66, 44, 62, 89][i]})`);
+    marker.setAttribute('transform', `translate(${x - markerX[i]} ${y - markerY[i]})`);
   }
   renderer.render(scene, camera);
   container.classList.add('has-rig');
@@ -147,9 +168,9 @@ window.paintRiggedHand = (container, pose) => {
   if (!view) {
     view = { loading: true, pose };
     views.set(container, view);
-    const side = container.id === 'movingLeftHand' ? 'left' : 'right';
+    const side = handSide(container);
     if (!assets.has(side)) {
-      const url = new URL('../models/keyline-' + side + '-hand.glb?v=rig-2', import.meta.url);
+      const url = new URL('../models/keyline-' + side + '-hand.glb?v=shared-rig', import.meta.url);
       assets.set(side, new GLTFLoader().loadAsync(url.href));
     }
     assets.get(side).then(asset => {

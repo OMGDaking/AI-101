@@ -1,3 +1,4 @@
+74ea2a986e465ca2673525292b742c88679ecb1c 2026-11-19T15:41:28-05:00 Use matching Blender hand rigs throughout practice
 b8d4e16d4c9ab8cb1587b4b44a1385f4fe43277b 2026-11-19T13:10:35-05:00 Show glove patterns immediately while previews load
 1c3a1e0cc21777f12460e278a5035d84b63d5198 2026-11-19T13:06:13-05:00 Repair left hand curls and keep glove previews visible
 410d81b2955f2a42d12d1c062563e39686f4bdd6 2026-11-19T12:58:56-05:00 Start the Keyline intro automatically at 1.2x

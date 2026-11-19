@@ -50,6 +50,7 @@ function expandedPose(frame,time){
  return {targets,pressed,down,extra:down.filter(n=>!pressed.some(s=>s.midi===n.midi)).length};
 }
 const handAnimation={left:null,right:null};
+const guideRigViews = new Map();
 function restingHandFrame(hand){const base=naturalKeys.indexOf(hand==='left'?48:60);return {time:-1,hand,base,span:5,slots:[0,1,2,3,4].map((n,i)=>({midi:naturalKeys[base+i],finger:hand==='right'?i+1:5-i,coordinate:base+i+.5})),shifted:false};}
 function paintMovingHand(container,frame,pose){
  const hand=frame.hand;
@@ -62,7 +63,7 @@ function paintMovingHand(container,frame,pose){
  const keyboardBase=naturalKeys.indexOf(keyboardMin);
  container.style.left=(frame.base-keyboardBase)*100/whiteKeyCount+'%';
  container.style.width=frame.span*100/whiteKeyCount+'%';
- container.style.transition=(playing||(typeof coachGroups==='function'&&coach.mode==='watch'))?'left .14s ease-out,width .14s ease-out':'none';
+ container.style.transition=(playing||(typeof coachGroups==='function'&&coach.mode==='watch'))?'left .14s ease-out,width .14s ease-out,translate .08s ease-out':'none';
  poseHandSVG(container.querySelector('svg'),pose.targets,pose.pressed.map(s=>s.finger));
  window.paintRiggedHand?.(container,pose);
  container.querySelector('svg').setAttribute('aria-label',`${hand==='left'?'Left':'Right'} hand: ${pose.pressed.map(s=>handFingerNames[s.finger]+' on '+noteName(s.midi)).join(', ')||'ready'}`);
@@ -74,20 +75,45 @@ function guideHandCard(hand,frame,pose){
  let keys='';
  for(let i=0;i<span;i++){const midi=naturalKeys[base+i],active=down.some(s=>s.midi===midi);keys+=`<rect x="${40+i*w}" y="8" width="${w-1}" height="167" rx="3" fill="${active?'#bd7782':'#f7f2ec'}" stroke="#9d9390" stroke-width=".6"/><text x="${40+(i+.5)*w}" y="166" text-anchor="middle" font-size="9" fill="${active?'#fff':'#655c59'}">${noteName(midi)}</text>`;}
  for(let i=0;i<span-1;i++){const midi=naturalKeys[base+i];if(![0,2,5,7,9].includes(midi%12))continue;const active=down.some(s=>s.midi===midi+1);keys+=`<rect x="${40+(i+1)*w-w*.29}" y="8" width="${w*.58}" height="83" rx="2" fill="${active?'#ad5d70':'#24242a'}"/><text x="${40+(i+1)*w}" y="25" text-anchor="middle" font-size="7" fill="white">${noteName(midi+1)}</text>`;}
- return `<div class="guide-hand-card" id="guide-${hand}"><small>${hand==='left'?'LEFT':'RIGHT'} · ${description}</small><svg class="teaching-hand" viewBox="0 0 300 265" role="img" aria-label="${hand} hand: ${description}. Curved fingers, relaxed wrist, viewed from above.">${keys}<g transform="translate(40 35)">${anatomicalHandMarkup({left:hand==='left',prefix:'guide-'+hand,selected:down.map(s=>s.finger)})}</g></svg></div>`;
+ return `<div class="guide-hand-card" id="guide-${hand}"><small>${hand==='left'?'LEFT':'RIGHT'} · ${description}</small><div class="guide-hand-stage"><svg viewBox="0 0 300 265" aria-hidden="true">${keys}</svg><div class="guide-rig-slot"></div></div></div>`;
 }
+function renderRigGuide(hand, pose) {
+ let container = guideRigViews.get(hand);
+ if (!container) {
+  container = document.createElement('div');
+  container.className = 'guide-rig-view';
+  container.id = 'guide-rig-' + hand;
+  container.dataset.rigSide = hand;
+  container.innerHTML = `<svg class="teaching-hand" viewBox="0 0 220 210" preserveAspectRatio="none" role="img" aria-label="${hand} hand position">${anatomicalHandMarkup({left:hand==='left',prefix:container.id})}</svg>`;
+  guideRigViews.set(hand, container);
+ }
+ const slot = $('guide-' + hand)?.querySelector('.guide-rig-slot');
+ if (!slot?.clientWidth) return;
+ if (container.parentElement !== slot) slot.replaceChildren(container);
+ const skinToken = gloveState.equipped + ':' + gloveHue(gloveState.equipped);
+ if (container.dataset.skinToken !== skinToken) {
+  applyGloveSkin(container);
+  container.dataset.skinToken = skinToken;
+ }
+ poseHandSVG(container.querySelector('svg'), pose.targets, pose.pressed.map(s => s.finger));
+ window.paintRiggedHand?.(container, pose);
+}
+
 function renderExpandedHand(){
  const hands=handView==='both'?['left','right']:[handView],states={};
  for(const hand of ['left','right']){const container=$(hand==='left'?'movingLeftHand':'movingHand');container.hidden=!hands.includes(hand);if(!hands.includes(hand))continue;const frame=expandedFrameAt(position,hand)||restingHandFrame(hand),pose=expandedPose(frame,position);states[hand]={frame,pose};paintMovingHand(container,frame,pose);}
  expandedCurrent=states;const both=handView==='both',summary=hands.map(h=>(h==='left'?'L: ':'R: ')+(states[h].pose.pressed.map(s=>noteName(s.midi)).join(' + ')||'rest')).join('  ·  ');$('motionCaption').textContent=summary;
  $('bothHands').setAttribute('aria-pressed',both);$('rightHand').setAttribute('aria-pressed',handView==='right');$('leftHand').setAttribute('aria-pressed',handView==='left');document.querySelector('.hand-guide').classList.toggle('both-view',both);
- const token=handView+':'+hands.map(h=>states[h].frame.time+':'+states[h].pose.pressed.map(s=>s.midi).join(',')).join('|');if(token===handCache)return;handCache=token;
+ const token=handView+':'+hands.map(h=>states[h].frame.time+':'+states[h].pose.pressed.map(s=>s.midi).join(',')).join('|');if(token===handCache){
+  for(const h of hands) renderRigGuide(h, states[h].pose);
+  return;
+ }handCache=token;
  $('handCue').textContent=both?'Both hands, together':(handView==='left'?'Left':'Right')+' hand · '+(states[handView].pose.pressed.map(s=>noteName(s.midi)).join(' + ')||'rest');$('fingerBadge').textContent=both?'L + R':states[handView].pose.pressed.map(s=>s.finger).join('+')||'–';$('fingerName').textContent=summary;
  $('handPosition').textContent=hands.map(h=>{const f=states[h].frame;return (h==='left'?'Left: ':'Right: ')+noteName(naturalKeys[f.base])+'–'+noteName(naturalKeys[f.base+f.span-1]);}).join(' · ');
  $('handExplain').textContent=hands.some(h=>states[h].pose.extra)?'Additional sounding notes stay lit. Follow the score for releases and hand changes.':both?'Watch both parts at the same tempo. Keep your wrists relaxed and follow the lit keys.':'Follow this hand’s movement and the lit keys. Keep your wrist relaxed.';$('handFootnote').textContent='Suggested hand positions · consult the score for fingering';
  const ids=focusIndices(),index=ids.indexOf(handIndex());$('handStep').textContent=(both?'Both hands':'Selected hand')+' · Event '+(index+1)+' of '+ids.length;$('previousNote').disabled=index<=0;$('nextNote').disabled=index>=ids.length-1;
  $('handDiagram').innerHTML='<div class="both-hand-diagrams">'+hands.map(h=>guideHandCard(h,states[h].frame,states[h].pose)).join('')+'</div>';
- for(const h of hands){const wrapper=$('guide-'+h);poseHandSVG(wrapper.querySelector('svg'),states[h].pose.targets,states[h].pose.pressed.map(s=>s.finger));}applyGloveSkin($('handDiagram'));
+ for(const h of hands) renderRigGuide(h, states[h].pose);
 }
 function expandedFingerAt(midi){return Object.values(expandedCurrent||{}).flatMap(s=>s.pose.pressed).find(s=>s.midi===midi)?.finger||'';}
 function setHandView(view){handView=view;if(view!=='both')practiceHand=view;else practiceHand=notes.some(n=>n.hand==='right')?'right':'left';handCache='';render();}

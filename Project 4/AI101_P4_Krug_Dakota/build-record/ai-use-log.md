@@ -43,3 +43,8 @@ Earlier dates rely on the existing project log where noted. Git timestamps ident
 Dakota requested automatic intro playback at 1.2×, a repaired Blender left hand, visible glove skins, and a short class presentation. Codex updated the live app and copied the new build into the classroom packet. It checked both rig views in Moonlight Sonata and the seven locker previews, and drafted the presentation with clickable links. Source commits are `410d81b` and `1c3a1e0`.
 
 The live locker check revealed a delay loading preview images. Codex changed the locker to draw all seven skins before the images arrive and verified their display on the published build (`b8d4e16`).
+
+
+## Shared hand rigs · November 19
+
+Dakota asked for the Blender hands and camo to match across lessons and examples. Codex identified mixed coordinates in the left rig, repaired and exported it in Blender, and updated the shared keyboard renderer. Codex checked the updated views in the browser. That check used locally seeded Forest Camo and lesson unlocks. Build `74ea2a9`.
